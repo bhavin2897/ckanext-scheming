@@ -19,6 +19,7 @@ dataset_fields:
     label: Description
     preset:
     form_placeholder: breif note about the dataset
+    form_snippet: markdown.html
 
   - field_name: id
     label: DOI
@@ -99,7 +100,7 @@ dataset_fields:
 
   - field_name: license_id
     label: License ID
-    preset:
+    form_snippet: license.html
 
   - field_name: license_title
     label: License Title
