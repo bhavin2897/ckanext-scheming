@@ -88,16 +88,16 @@ dataset_fields:
 
 # Chemistry Metadata included
 
-- field_name: molecular_weight
+- field_name: exactmass
   label: Molecular Weight
   display_snippet: text.html
   form_placeholder: ex. 230gms
 
-- field_name: inChi
+- field_name: inchi
   label: InChI
   display_snippet: text.html
 
-- field_name: inChiKey
+- field_name: inchi_key
   label: InChIKey
   display_snippet: text.html
 
@@ -109,7 +109,7 @@ dataset_fields:
   label: IUPAC Name
   display_snippet: text.html
 
-- field_name: molecularFormula
+- field_name: mol_formula
   label: Molecular Formula
   display_snippet: text.html
 
