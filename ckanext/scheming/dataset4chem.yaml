@@ -108,12 +108,12 @@ dataset fields:
 
 # Relations
 
-  - field_name: hasPart
-      value : No
-      dataset_name:
-      hasPart_url:
-
-
-  - field_name: isPartof
-      study_name:
-      isPartof_url:
+# - field_name: hasPart
+#     value : No
+#     dataset_name:
+#     hasPart_url:
+#
+#
+# - field_name: isPartof
+#     study_name:
+ #     isPartof_url:
