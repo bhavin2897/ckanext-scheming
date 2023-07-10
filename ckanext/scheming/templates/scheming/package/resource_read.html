@@ -8,6 +8,13 @@
   ] -%}
 {%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
 
+{% block resource_view_content %}
+    {% if pkg_dict.get('inchi_key') %}
+        {% snippet "snippets/data_page_visuals.html", pkg = pkg_dict%}
+        {{ super() }}
+    {% endif %}
+{% endblock %}
+
 {% block resource_additional_information_inner %}
   {% if res.datastore_active %}
     {% block resource_data_dictionary %}
@@ -86,4 +93,5 @@
 
 
   </div>
+
 {% endblock %}

@@ -37,6 +37,7 @@
 {% endblock %}
 
 {% block package_additional_info %}
+  {% snippet "snippets/related_identifier.html", pkg = pkg %}
   {% snippet "scheming/package/snippets/additional_info.html",
     pkg_dict=pkg, dataset_type=dataset_type, schema=schema %}
 {% endblock %}
