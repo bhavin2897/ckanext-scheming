@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="first commit with new dataset schemas">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="undo mapping">
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/dataset4chem.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,28 @@
       <option name="project" value="LOCAL" />
       <updated>1688977238107</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="first commit with new dataset schemas">
+      <created>1688977741401</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688977741401</updated>
+    </task>
+    <task id="LOCAL-00009" summary="undo mapping">
+      <created>1688977954697</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1688977954697</updated>
+    </task>
+    <task id="LOCAL-00010" summary="undo mapping">
+      <created>1688978022101</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1688978022101</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +159,7 @@
     <MESSAGE value="Basic org to repo versioning" />
     <MESSAGE value="resolved issue with naming the custom scheming org/repo" />
     <MESSAGE value="first commit with new dataset schemas" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit with new dataset schemas" />
+    <MESSAGE value="undo mapping" />
+    <option name="LAST_COMMIT_MESSAGE" value="undo mapping" />
   </component>
 </project>
