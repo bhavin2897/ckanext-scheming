@@ -1,0 +1,49 @@
+scheming_version: 1
+dataset_type: project
+about_url: http://
+
+
+
+#- "@type": CreativeWork
+ # "@id": https://bioschemas.org/profiles/Study/0.3-DRAFT
+#- "@type": CreativeWork
+#  "@id": https://isa-specs.readthedocs.io/en/latest/isamodel.html#investigation
+
+# Converted from JSON  -> YAML
+name: ''
+description: ''
+keywords: []
+license: ''
+url: ''
+dateCreated: ''
+dateModified: ''
+datePublished: ''
+author:
+- "@type": Person
+  givenName: ''
+  familyName: ''
+  email: ''
+  affiliation: ''
+  "@id": ''
+citation:
+- "@type": CreativeWork
+  abstract: ''
+  author: ''
+  headline: ''
+  "@id": ''
+hasPart:
+- "@type": Study
+  name: ''
+  url: ''
+  about:
+    "@type": ChemicalSubstance
+    name: ''
+    hasBioChemEntityPart:
+    - "@type": MolecularEntity
+      inChI: ''
+      description: ''
+  hasPart:
+  - "@type": Dataset
+    name: ''
+    url: ''
+"@id": ''

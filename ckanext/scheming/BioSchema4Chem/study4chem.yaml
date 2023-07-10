@@ -1,0 +1,123 @@
+scheming_version: 1
+dataset_type: study
+about_url: http://
+
+dataset fields:
+
+  - field_name: title
+    label: Study Name
+    preset: title
+    form_placeholder: descriptable title
+
+  - field_name: notes
+    label: Description
+    preset:
+    form_placeholder: breif note about the dataset
+
+
+  - field_name: id
+    label: DOI
+    preset:
+    form_placeholder:
+
+
+  - field_name: author
+    label: Author
+    preset:
+    form_placeholder: eg. Alfred Nobel, Neils Bohr
+
+
+  - field_name: url
+    label: URL
+    preset:
+    form_placeholder: http//
+
+
+  - field_name: metadata_published
+    label: MetadataPublished
+    preset:
+    form_placeholder: 1970-01-01
+
+
+  - field_name: metadata_created
+    label: MetadataCreated
+    preset:
+    form_placeholder: 1970-01-01
+
+
+  - field_name: metadata_modified
+    label: MetadataModified
+    preset:
+    form_placeholder: 1970-01-01
+
+#Chemistry (MolecularEntity) Metadata
+  -
+  - field_name: molecular_weight
+    label: Molecular Weight
+    preset:
+    form_placeholder: 230gms
+
+  - field_name: molecular_weight
+    label: Molecular Weight
+    preset:
+    form_placeholder: 230gms
+
+  - field_name: inChi
+    label: InChI
+    preset:
+    form_placeholder:
+
+  - field_name: inChiKey
+    label: InChIKey
+    preset:
+    form_placeholder:
+
+  - field_name: smiles
+    label: SMILES
+    preset:
+    form_placeholder:
+
+
+  - field_name: iupacName
+    label: IUPAC Name
+    preset:
+    form_placeholder:
+
+
+  - field_name: molecularFormula
+    label: Molecular Formula
+    preset:
+
+  - field_name: measurement_technique
+    label: Measurement Technique
+    preset:
+
+
+  - field_name:
+    label:
+    preset:
+    form_placeholder:
+
+
+  - field_name:
+    label:
+    preset:
+    form_placeholder:
+
+
+  - field_name:
+    label:
+    preset:
+    form_placeholder:
+
+
+  - field_name:
+    label:
+    preset:
+    form_placeholder:
+
+
+  - field_name:
+    label:
+    preset:
+    form_placeholder:
