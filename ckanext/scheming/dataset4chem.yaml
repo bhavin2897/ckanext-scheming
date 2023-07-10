@@ -1,126 +1,154 @@
 scheming_version: 2
-dataset_type: dataset4chem
-about: The default ckan dataset schema with chemistry metadata based on BioSchemasOrg
+dataset_type: dataset
+about: A reimplementation of the default CKAN dataset schema based on BioSchema.org
 about_url: https://bioschemas.org/profiles/Dataset/1.0-RELEASE
 
-# basic requirements
+
 dataset_fields:
 
-  - start_form_page:
-      title: Basic Info
-      description: Required and core dataset fields
+- field_name: title
+  label: Title
+  preset: title
+  form_placeholder: eg. A descriptive title
 
-  - field_name: title
-    label: Dataset Name
-    preset: title
-    form_placeholder: descriptable title
+- field_name: name
+  label: URL
+  preset: dataset_slug
+  form_placeholder: eg. my-dataset
 
-  - field_name: notes
-    label: Description
-    preset:
-    form_placeholder: breif note about the dataset
-    form_snippet: markdown.html
+- field_name: notes
+  label: Description
+  form_snippet: markdown.html
+  form_placeholder: eg. Some useful notes about the data
 
-  - field_name: id
-    label: DOI
-    preset:
-    form_placeholder: doi:10.XXX
+- field_name: tag_string
+  label: Tags
+  preset: tag_string_autocomplete
+  form_placeholder: eg. economy, mental health, government
 
+- field_name: license_id
+  label: License
+  form_snippet: license.html
+  help_text: License definitions and additional information can be found at http://opendefinition.org/
 
-  - field_name: author
-    label: Author
-    preset:
-    form_placeholder: eg. Alfred Nobel, Neils Bohr
+- field_name: license_url
+  label: License URL
+  form_snippet: link.html
 
+- field_name: owner_org
+  label: Organization
+  preset: dataset_organization
 
-  - field_name: url
-    label: URL
-    preset:
-    form_placeholder: http//doi
+- field_name: url
+  label: Source
+  form_placeholder: http://example.com/dataset.json
+  display_property: foaf:homepage
+  display_snippet: link.html
 
+- field_name: version
+  label: Version
+  validators: ignore_missing unicode_safe package_version_validator
+  form_placeholder: '1.0'
 
-  - field_name: metadata_published
-    label: MetadataPublished
-    preset:
-    form_placeholder: 1970-01-01
-    form_snippet: datetime.html
+- field_name: author
+  label: Author
+  form_placeholder: Joe Bloggs
+  display_property: dc:creator
 
-  - field_name: metadata_created
-    label: MetadataCreated
-    preset:
-    form_placeholder: 1970-01-01
-    form_snippet: datetime.html
+- field_name: author_email
+  label: Author Email
+  form_placeholder: joe@example.com
+  display_property: dc:creator
+  display_snippet: email.html
+  display_email_name_field: author
 
-  - field_name: metadata_modified
-    label: MetadataModified
-    preset:
-    form_placeholder: 1970-01-01
-    form_snippet: datetime.html
+- field_name: maintainer
+  label: Maintainer
+  form_placeholder: Joe Bloggs
+  display_property: dc:contributor
 
-  - field_name: maintainer
-    label: Maintainer
+- field_name: maintainer_email
+  label: Maintainer Email
+  form_placeholder: joe@example.com
+  display_property: dc:contributor
+  display_snippet: email.html
+  display_email_name_field: maintainer
 
-  - field_name: maintainer_email
-    label: Maintainer EMail
-
-#Chemistry (MolecularEntity) Metadata
-
-  - field_name: molecular_weight
-    label: Molecular Weight
-    preset:
-    form_placeholder: 230gms
-
-  - field_name: inChi
-    label: InChI
-    preset:
-    form_placeholder:
-
-  - field_name: inChiKey
-    label: InChIKey
-    preset:
-    form_placeholder:
-
-  - field_name: smiles
-    label: SMILES
-    preset:
-    form_placeholder:
+- field_name: language
+  label : Language
+  form_placeholder: English
+  display_property: dc:language
+  display_snippet: text.html
 
 
-  - field_name: iupacName
-    label: IUPAC Name
-    preset:
-    form_placeholder:
+# Chemistry Metadata included
+
+- field_name: molecular_weight
+  label: Molecular Weight
+  display_snippet: text.html
+  form_placeholder: ex. 230gms
+
+- field_name: inChi
+  label: InChI
+  display_snippet: text.html
+
+- field_name: inChiKey
+  label: InChIKey
+  display_snippet: text.html
+
+- field_name: smiles
+  label: SMILES
+  display_snippet: text.html
+
+- field_name: iupacName
+  label: IUPAC Name
+  display_snippet: text.html
+
+- field_name: molecularFormula
+  label: Molecular Formula
+  display_snippet: text.html
+
+- field_name: measurement_technique
+  label: Measurement Technique
+  display_snippet: text.html
+
+# datetime fields
+
+- field_name: metadata_published
+  label: MetadataPublished
+  preset:
+  form_placeholder: 1970-01-01
+  form_snippet: datetime.html
+
+- field_name: metadata_created
+  label: MetadataCreated
+  preset:
+  form_placeholder: 1970-01-01
+  form_snippet: datetime.html
+
+- field_name: metadata_modified
+  label: MetadataModified
+  preset:
+  form_placeholder: 1970-01-01
+  form_snippet: datetime.html
 
 
-  - field_name: molecularFormula
-    label: Molecular Formula
-    preset:
 
-  - field_name: measurement_technique
-    label: Measurement Technique
-    preset:
+resource_fields:
 
+- field_name: url
+  label: URL
+  preset: resource_url_upload
 
-  - field_name: license_id
-    label: License ID
-    form_snippet: license.html
+- field_name: name
+  label: Name
+  form_placeholder: eg. January 2011 Gold Prices
 
-  - field_name: license_title
-    label: License Title
-    preset:
+- field_name: description
+  label: Description
+  form_snippet: markdown.html
+  form_placeholder: Some useful notes about the data
 
-  - field_name: license_url
-    label: License URL
-    preset:
-
-# Relations
-
-# - field_name: hasPart
-#     value : No
-#     dataset_name:
-#     hasPart_url:
-#
-#
-# - field_name: isPartof
-#     study_name:
- #     isPartof_url:
+- field_name: format
+  label: Format
+  preset: resource_format_autocomplete
