@@ -55,15 +55,10 @@ dataset_fields:
   validators: ignore_missing unicode_safe package_version_validator
   form_placeholder: '1.0'
 
-- field_name: author
-  label: Author
-  repeating_label: Authors
-  repeating_subfields:
-
-  - field_name: author_name
-    label: Author Name
-    form_placeholder: Joe Bloggs
-    display_property: dc:creator
+ - field_name: author_name
+   label: Author Name
+   form_placeholder: Joe Bloggs
+   display_property: dc:creator
 
 - field_name: maintainer
   label: Maintainer

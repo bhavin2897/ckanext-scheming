@@ -58,13 +58,9 @@ dataset_fields:
 
 - field_name: author
   label: Author
-  repeating_label: Authors
-  repeating_subfields:
+  form_placeholder: Joe Bloggs
+  display_property: dc:contributor
 
-  - field_name: author_name
-    label: Author Name
-    form_placeholder: Joe Bloggs
-    display_property: dc:creator
 
 #- field_name: author_email
 #  label: Author Email
