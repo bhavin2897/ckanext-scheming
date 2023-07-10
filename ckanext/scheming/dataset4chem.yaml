@@ -104,8 +104,6 @@ dataset fields:
     label: License URL
     preset:
 
-
-
 # Relations
 
 # - field_name: hasPart
