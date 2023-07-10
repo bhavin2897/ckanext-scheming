@@ -1,5 +1,5 @@
 scheming_version: 2
-dataset_type: dataset
+dataset_type: dataset4chem
 about: A reimplementation of the default CKAN dataset schema
 about_url: http://github.com/ckan/ckanext-scheming
 

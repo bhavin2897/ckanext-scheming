@@ -43,16 +43,19 @@ dataset_fields:
     label: MetadataPublished
     preset:
     form_placeholder: 1970-01-01
+    form_snippet: datetime.html
 
   - field_name: metadata_created
     label: MetadataCreated
     preset:
     form_placeholder: 1970-01-01
+    form_snippet: datetime.html
 
   - field_name: metadata_modified
     label: MetadataModified
     preset:
     form_placeholder: 1970-01-01
+    form_snippet: datetime.html
 
   - field_name: maintainer
     label: Maintainer
