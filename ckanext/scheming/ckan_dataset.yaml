@@ -106,6 +106,7 @@ dataset_fields:
   display_snippet: text.html
 
 
+
 resource_fields:
 
 - field_name: url
