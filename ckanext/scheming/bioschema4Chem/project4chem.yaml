@@ -79,6 +79,8 @@ dataset_fields:
 
 - field_name: citation
   label: Citation
+  repeating_label: Citation
+  repeating_subfields:
 
   - field_name: citation_headline
     label: Citation Headline
