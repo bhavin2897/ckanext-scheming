@@ -1,5 +1,6 @@
 scheming_version: 2
 dataset_type: dataset
+about: The default ckan dataset schema with chemistry metadata based on BioSchemasOrg
 about_url: https://bioschemas.org/profiles/Dataset/1.0-RELEASE
 
 # basic requirements
