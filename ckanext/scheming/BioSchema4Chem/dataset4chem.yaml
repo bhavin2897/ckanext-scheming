@@ -5,6 +5,10 @@ about_url: https://bioschemas.org/profiles/Dataset/1.0-RELEASE
 # basic requirements
 dataset fields:
 
+  - start_form_page:
+      title: Basic Info
+      description: Required and core dataset fields
+
   - field_name: title
     label: Dataset Name
     preset: title
@@ -15,24 +19,20 @@ dataset fields:
     preset:
     form_placeholder: breif note about the dataset
 
-
   - field_name: id
     label: DOI
     preset:
     form_placeholder: doi:10.XXX
-
 
   - field_name: author
     label: Author
     preset:
     form_placeholder: eg. Alfred Nobel, Neils Bohr
 
-
   - field_name: url
     label: URL
     preset:
     form_placeholder: http//doi
-
 
   - field_name: metadata_published
     label: MetadataPublished
