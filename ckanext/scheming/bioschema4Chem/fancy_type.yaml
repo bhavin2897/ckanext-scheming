@@ -132,7 +132,6 @@ dataset_fields:
   form_placeholder: 1970-01-01
   form_snippet: datetime.html
 
-
 resource_fields:
 
 - field_name: url
