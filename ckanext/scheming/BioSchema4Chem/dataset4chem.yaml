@@ -3,7 +3,7 @@ dataset_type: dataset
 about_url: https://bioschemas.org/profiles/Dataset/1.0-RELEASE
 
 # basic requirements
-dataset fields:
+dataset_fields:
 
   - start_form_page:
       title: Basic Info
