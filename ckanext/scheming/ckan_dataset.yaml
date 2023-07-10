@@ -1,7 +1,7 @@
 scheming_version: 2
 dataset_type: dataset4chem
-about: A reimplementation of the default CKAN dataset schema
-about_url: http://github.com/ckan/ckanext-scheming
+about: A reimplementation of the default CKAN dataset schema based on BioSchema.org
+about_url: https://bioschemas.org/profiles/Dataset/1.0-RELEASE
 
 
 dataset_fields:
@@ -69,6 +69,41 @@ dataset_fields:
   display_property: dc:contributor
   display_snippet: email.html
   display_email_name_field: maintainer
+
+- field_name: language
+  label : Language
+  form_placeholder: English
+  display_property: dc:language
+  display_snippet: text.html
+
+- field_name: molecular_weight
+  label: Molecular Weight
+  display_snippet: text.html
+  form_placeholder: ex. 230gms
+
+- field_name: inChi
+  label: InChI
+  display_snippet: text.html
+
+- field_name: inChiKey
+  label: InChIKey
+  display_snippet: text.html
+
+- field_name: smiles
+  label: SMILES
+  display_snippet: text.html
+
+- field_name: iupacName
+  label: IUPAC Name
+  display_snippet: text.html
+
+- field_name: molecularFormula
+  label: Molecular Formula
+  display_snippet: text.html
+
+- field_name: measurement_technique
+  label: Measurement Technique
+  display_snippet: text.html
 
 
 resource_fields:
