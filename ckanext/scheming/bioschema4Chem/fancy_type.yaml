@@ -106,26 +106,39 @@ dataset_fields:
   label: Molecular Formula
   display_snippet: text.html
 
-- field_name: measurement_technique
-  label: Measurement Technique
-  display_snippet: text.html
+- field_name: variableMeasured
+  label: Measurement Variables
+  repeating_label: Measurement
+  repeating_subfields:
+    - field_name: variableMeasured_name
+      label: Measured Variable Name
+
+    - field_name: variableMeasured_propertyID
+      label: IRI
+
+    - field_name: variableMeasured_value
+      label: Measured Value
+
+    - field_name: variableMeasured_tsurl
+      label: TS URL
+
 
 # datetime fields
 
 - field_name: metadata_created
   label: MetadataCreated
   form_placeholder: 1970-01-01
-  form_snippet: datetime.html
+  form_snippet: datetime_tz.html
 
 - field_name: metadata_modified
   label: MetadataModified
   form_placeholder: 1970-01-01
-  form_snippet: datetime.html
+  form_snippet: datetime_tz.html
 
 - field_name: metadata_published
   label: MetadataPublished
   form_placeholder: 1970-01-01
-  form_snippet: datetime.html
+  form_snippet: datetime_tz.html
 
 resource_fields:
 
