@@ -123,17 +123,17 @@ dataset_fields:
 - field_name: metadata_created
   label: MetadataCreated
   form_placeholder: 1970-01-01
-  form_snippet: datetime.html
+  form_snippet: datetime_tz.html
 
 - field_name: metadata_modified
   label: MetadataModified
   form_placeholder: 1970-01-01
-  form_snippet: datetime.html
+  form_snippet: datetime_tz.html
 
 - field_name: metadata_published
   label: MetadataPublished
   form_placeholder: 1970-01-01
-  form_snippet: datetime.html
+  form_snippet: datetime_tz.html
 
 resource_fields:
 
