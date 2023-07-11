@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="added missing underscore">
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/BioSchema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/BioSchema4Chem/dataset4chem.yaml" afterDir="false" />
-    </list>
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="maintainer email elimanted in fancy_type" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +21,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -49,13 +48,16 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ckanext/scheming" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets" />
+      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/BioSchema4Chem/" />
     </key>
   </component>
@@ -159,7 +161,189 @@
       <option name="project" value="LOCAL" />
       <updated>1688979457556</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="added missing underscore">
+      <created>1688979517016</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1688979517016</updated>
+    </task>
+    <task id="LOCAL-00015" summary="added missing underscore">
+      <created>1688980448145</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1688980448145</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added missing underscore">
+      <created>1688980878895</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1688980878895</updated>
+    </task>
+    <task id="LOCAL-00017" summary="added form_snippet">
+      <created>1688981129153</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688981129153</updated>
+    </task>
+    <task id="LOCAL-00018" summary="test 1">
+      <created>1688982141663</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1688982141663</updated>
+    </task>
+    <task id="LOCAL-00019" summary="test 1">
+      <created>1688982643691</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1688982643691</updated>
+    </task>
+    <task id="LOCAL-00020" summary="test 2">
+      <created>1688982660469</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1688982660469</updated>
+    </task>
+    <task id="LOCAL-00021" summary="dataset4chem test initial">
+      <created>1688989158493</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1688989158493</updated>
+    </task>
+    <task id="LOCAL-00022" summary="added link.hmtl to display dataset4chem">
+      <created>1688989243317</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1688989243317</updated>
+    </task>
+    <task id="LOCAL-00023" summary="added all possible dataset types">
+      <created>1688995092096</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1688995092096</updated>
+    </task>
+    <task id="LOCAL-00024" summary="chnaged dataset type to &amp; in fancy_type.yaml">
+      <created>1688995232693</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1688995232693</updated>
+    </task>
+    <task id="LOCAL-00025" summary="matching with previous definition of fields">
+      <created>1688995548831</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1688995548831</updated>
+    </task>
+    <task id="LOCAL-00026" summary="delete whole folder">
+      <created>1688997462998</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1688997462998</updated>
+    </task>
+    <task id="LOCAL-00027" summary="testing if moved to a folder">
+      <created>1688997567811</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1688997567811</updated>
+    </task>
+    <task id="LOCAL-00028" summary="adding two new dataset types 'study' &amp; 'project'">
+      <created>1688998230629</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1688998230629</updated>
+    </task>
+    <task id="LOCAL-00029" summary="repeating fields added for project">
+      <created>1688998427921</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1688998427921</updated>
+    </task>
+    <task id="LOCAL-00030" summary="adding repeated authors">
+      <created>1688999095084</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1688999095084</updated>
+    </task>
+    <task id="LOCAL-00031" summary="deleted author email">
+      <created>1688999439527</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1688999439528</updated>
+    </task>
+    <task id="LOCAL-00032" summary="deleted author email">
+      <created>1688999499008</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1688999499008</updated>
+    </task>
+    <task id="LOCAL-00033" summary="deleted author email">
+      <created>1688999525027</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1688999525027</updated>
+    </task>
+    <task id="LOCAL-00034" summary="deleted author email">
+      <created>1688999606083</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1688999606083</updated>
+    </task>
+    <task id="LOCAL-00035" summary="merge with previous">
+      <created>1688999662236</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1688999662236</updated>
+    </task>
+    <task id="LOCAL-00036" summary="trial to add display snippets to read.html">
+      <created>1689001327016</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1689001327016</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add molecular formula if exists">
+      <created>1689001660147</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1689001660147</updated>
+    </task>
+    <task id="LOCAL-00038" summary="adding related identifier details to the view">
+      <created>1689001817637</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1689001817638</updated>
+    </task>
+    <task id="LOCAL-00039" summary="maintainer email elimanted in fancy_type">
+      <created>1689002484040</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1689002484040</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,14 +360,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added dataset4Chem.json &amp; project4Chem.json" />
-    <MESSAGE value="Basic org to repo versioning" />
     <MESSAGE value="resolved issue with naming the custom scheming org/repo" />
     <MESSAGE value="first commit with new dataset schemas" />
     <MESSAGE value="undo mapping" />
     <MESSAGE value="delete nfdi4chem branch" />
     <MESSAGE value="adding start_form_page" />
     <MESSAGE value="added missing underscore" />
-    <option name="LAST_COMMIT_MESSAGE" value="added missing underscore" />
+    <MESSAGE value="added form_snippet" />
+    <MESSAGE value="test 1" />
+    <MESSAGE value="test 2" />
+    <MESSAGE value="dataset4chem test initial" />
+    <MESSAGE value="added link.hmtl to display dataset4chem" />
+    <MESSAGE value="added all possible dataset types" />
+    <MESSAGE value="chnaged dataset type to &amp; in fancy_type.yaml" />
+    <MESSAGE value="matching with previous definition of fields" />
+    <MESSAGE value="delete whole folder" />
+    <MESSAGE value="testing if moved to a folder" />
+    <MESSAGE value="adding two new dataset types 'study' &amp; 'project'" />
+    <MESSAGE value="repeating fields added for project" />
+    <MESSAGE value="adding repeated authors" />
+    <MESSAGE value="deleted author email" />
+    <MESSAGE value="merge with previous" />
+    <MESSAGE value="trial to add display snippets to read.html" />
+    <MESSAGE value="add molecular formula if exists" />
+    <MESSAGE value="adding related identifier details to the view" />
+    <MESSAGE value="maintainer email elimanted in fancy_type" />
+    <option name="LAST_COMMIT_MESSAGE" value="maintainer email elimanted in fancy_type" />
   </component>
 </project>
