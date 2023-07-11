@@ -119,6 +119,23 @@ dataset_fields:
   label: Measurement Technique
   display_snippet: text.html
 
+- field_name: variableMeasured
+  label: Measurement Variables
+  repeating_label: Measurement
+  repeating_subfields:
+    - field_name: variableMeasured_name
+      label: Measured Variable Name
+
+    - field_name: variableMeasured_propertyID
+      label: IRI
+
+    - field_name: variableMeasured_value
+      label: Measured Value
+
+    - field_name: variableMeasured_tsurl
+      label: TS URL
+
+
 # datetime fields
 
 - field_name: metadata_created
