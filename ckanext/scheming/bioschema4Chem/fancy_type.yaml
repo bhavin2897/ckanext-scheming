@@ -113,7 +113,7 @@ dataset_fields:
 
 - field_name: variableMeasured
   label: Measurement Variables
-  repeating_label: Measurement
+  repeating_label: Property
   repeating_subfields:
     - field_name: variableMeasured_name
       label: Measured Variable Name
