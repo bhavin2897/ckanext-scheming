@@ -1,5 +1,7 @@
 {% extends "package/snippets/additional_info.html" %}
 
+<h3> _('Metadata') </h3>
+
 {%- set exclude_fields = [
     'id',
     'title',
@@ -8,9 +10,19 @@
     'tag_string',
     'license_id',
     'owner_org',
+    'variableMeasured'
     ] -%}
+{%- set variable_measured = 'variableMeasured' -%}
+
 
 {% block package_additional_info %}
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+ <ul class="nav nav-tabs" >
+ <li> <i id="bt1" class="fa fa-sitemap">Metadata </i> </li>
+ <li> <i id="bt2" class="fa fa-sitemap" >Measurement</i> </li>
+  </ul>
+
+      <div id="one" class="table table-striped table-bordered table-condensed">
   {%- for field in schema.dataset_fields -%}
     {%- if field.field_name not in exclude_fields
         and field.display_snippet is not none -%}
@@ -30,4 +42,36 @@
       <td class="dataset-details">{{ _(pkg_dict.state) }}</td>
     </tr>
   {% endif %}
+
+</div>
+
+ <div id="two" class="table table-striped table-bordered table-condensed">
+     {%- for field in schema.dataset_fields -%}
+        {%- if field.field_name not in exclude_fields
+            and field.display_snippet in variable_measured -%}
+        <tr>
+        <th scope="row" class="dataset-label">{{
+          h.scheming_language_text(field.label) }}</th>
+        <td class="dataset-details"{%
+          if field.display_property %} property="{{ field.display_property
+          }}"{% endif %}>{%- snippet 'scheming/snippets/display_field.html',
+          field=field, data=pkg_dict, schema=schema -%}</td>
+      </tr>
+     {%- endif -%}
+  {%- endfor -%}
+ </div>
+
+<script>
+function swap(one, two) {
+    document.getElementById(one).style.display = 'block';
+    document.getElementById(two).style.display = 'none';
+}
+document.getElementById('bt1').addEventListener('click',function(e){
+    swap('one','two');
+});
+document.getElementById('bt2').addEventListener('click',function(e){
+    swap('two','one');
+});
+</script>
+
 {% endblock %}
