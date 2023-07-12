@@ -10,6 +10,7 @@
     'tag_string',
     'license_id',
     'owner_org',
+ 'variableMeasured',
     ] -%}
 
 {%- set variable_measured = 'variableMeasured' -%}
@@ -18,8 +19,8 @@
 {% block package_additional_info %}
 <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 
-  <button id="bt1" >Metadata </button>
-  <button id="bt2" >Measurement</button>
+  <button id="bt1" class="btn btn-default" >Metadata </button>
+  <button id="bt2" class="btn btn-default" >Measurement</button>
 
 
       <div id="one" class="table table-striped table-bordered table-condensed">
@@ -46,13 +47,16 @@
 </div>
 
  <div id="two" class="table table-striped table-bordered table-condensed">
+
      {%- for field in schema.dataset_fields -%}
         {%- if field.field_name in variable_measured and field.field_name not in exclude_fields -%}
+
         <tr>
         <th scope="row" class="dataset-label">{{
           h.scheming_language_text(field.label) }}</th>
-        <td class="dataset-details"{%
-          if field.display_property %} property="{{ field.display_property
+        <td class="dataset-details"
+            {% if field.display_property %}
+            property="{{ field.display_property
           }}"{% endif %}>{%- snippet 'scheming/snippets/display_field.html',
           field=field, data=pkg_dict, schema=schema -%}</td>
       </tr>
