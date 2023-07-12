@@ -6,9 +6,9 @@
  <h3>{{ _('Metadata Information') }}</h3>
 
 
-<div class="nav nav-tabs">
-    <button class="tablinks"  id="showMetadata"> Additional </button>
-    <button class="tabllinks"  id="showMeasureVal"> Measurement Values </button>
+<div class="btn-group btn-group-toggle">
+    <button class="btn btn-primary btn-sm"  id="showMetadata"> Additional </button>
+    <button class="btn btn-primary btn-sm"  id="showMeasureVal"> Measurement Values </button>
 </div>
 
     {%- set exclude_fields = [
@@ -19,9 +19,11 @@
     'tag_string',
     'license_id',
     'owner_org',
+
     'variableMeasured',
     'measurement_technique',
-    'inchi', 'inchi_key', 'smiles', 'mol_formula', 'iupacName',
+
+    'inchi', 'inchi_key', 'smiles', 'mol_formula', 'iupacName', 'exactmass',
     ] -%}
 
 {%- set variable_measured = ['measurement_technique', 'variableMeasured'] -%}
@@ -105,6 +107,7 @@ btnTabB.onclick = function () {
 
 document.getElementById("showMetadata").click();
 </script>
+
 
 
 </section>
