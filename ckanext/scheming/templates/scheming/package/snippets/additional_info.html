@@ -20,10 +20,11 @@
     'license_id',
     'owner_org',
     'variableMeasured',
+    'measurement_technique',
     'inchi', 'inchi_key', 'smiles', 'mol_formula', 'iupacName',
     ] -%}
 
-{%- set variable_measured = 'variableMeasured' -%}
+{%- set variable_measured = ['measurement_technique', 'variableMeasured'] -%}
 
 <table id="tableMetadata" class="table table-striped table-bordered table-condensed">
     <thead>
