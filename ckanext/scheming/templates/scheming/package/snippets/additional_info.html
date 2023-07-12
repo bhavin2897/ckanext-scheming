@@ -4,10 +4,10 @@
  <h3>{{ _('Metadata Information') }}</h3>h3>
     <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 
-<ul class="nav nav-tabs" role="tablist">
-<li type="button" id="showTableA" value="Additional">
-<li type="button" id="showTableB" value="Measurement Values">
-</ul>
+<div class="nav nav-tabs" role="tablist">
+    <button class="tablinks"  id="showTableA"> Additional </button>
+    <button class="tabllinks"  id="showTableB"> Measurement Values </button>
+</div>
 
     {%- set exclude_fields = [
     'id',
