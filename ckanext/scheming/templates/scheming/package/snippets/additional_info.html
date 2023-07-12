@@ -10,8 +10,8 @@
     'tag_string',
     'license_id',
     'owner_org',
-    'variableMeasured'
     ] -%}
+
 {%- set variable_measured = 'variableMeasured' -%}
 
 
@@ -47,7 +47,7 @@
 
  <div id="two" class="table table-striped table-bordered table-condensed">
      {%- for field in schema.dataset_fields -%}
-        {%- if field.display_snippet in variable_measured -%}
+        {%- if field.field_name in variable_measured -%}
 
         <tr>
         <th scope="row" class="dataset-label">{{
