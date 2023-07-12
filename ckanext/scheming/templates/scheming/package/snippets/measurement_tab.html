@@ -1,75 +1,41 @@
-
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-
-<body>
-<ul class="nav nav-tabs" >
-<li> <button id="bt1">Metadata</button> </li>
-<li> <button id="bt2">Measurement</button> </li>
-
-<div>
-    <div id="one">
-	<table style="width:50%">
-  <tr>
-    <th>Language</th>
-    <th>Name</th>
-    <th>Pattern</th>
-  </tr>
-  <tr>
-    <td>English</td>
-    <td>c#</td>
-    <td>MVC</td>
-  </tr>
-  <tr>
-    <td>English</td>
-    <td>Java</td>
-    <td>J2EE</td>
-  </tr>
-  <tr>
-    <td>English</td>
-    <td>.Net</td>
-    <td>MVC4</td>
-  </tr>
+<table border="1" id="tableA">
+    <tr>
+        <td>cell 1</td>
+        <td>cell 2</td>
+    </tr>
+    <tr>
+        <td>cell 3</td>
+        <td>cell 4</td>
+    </tr>
 </table>
-
-	</div>
-    <div id="two" style="display:none">
-	<table style="width:50%">
-  <tr>
-    <th>Language</th>
-    <th>Name</th>
-    <th>Pattern</th>
-  </tr>
-  <tr>
-    <td>French</td>
-    <td>PHP</td>
-    <td>MVC</td>
-  </tr>
-  <tr>
-    <td>French</td>
-    <td>Java</td>
-    <td>J2EE</td>
-  </tr>
-  <tr>
-    <td>French</td>
-    <td>.Net</td>
-    <td>MVC4</td>
-  </tr>
+<table border="1" id="tableB">
+    <tr>
+        <td>cell 5</td>
+        <td>cell 6</td>
+    </tr>
+    <tr>
+        <td>cell 7</td>
+        <td>cell 8</td>
+    </tr>
 </table>
+<input type="button" id="showTableA" value="Table A">
+<input type="button" id="showTableB" value="Table B">
 
-	</div>
-</div>
-
-</ul>
 
 <script>
-function swap(one, two) {
-    document.getElementById(one).style.display = 'block';
-    document.getElementById(two).style.display = 'none';
+
+  var tableA = document.getElementById("tableA");
+var tableB = document.getElementById("tableB");
+
+var btnTabA = document.getElementById("showTableA");
+var btnTabB = document.getElementById("showTableB");
+
+btnTabA.onclick = function () {
+    tableA.style.display = "table";
+    tableB.style.display = "none";
 }
-document.getElementById('bt1').addEventListener('click',function(e){
-    swap('one','two');
-});
-document.getElementById('bt2').addEventListener('click',function(e){
-    swap('two','one');
-});
+btnTabB.onclick = function () {
+    tableA.style.display = "none";
+    tableB.style.display = "table";
+}
 </script>
