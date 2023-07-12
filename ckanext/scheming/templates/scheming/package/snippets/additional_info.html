@@ -49,7 +49,7 @@
  <div id="two" class="table table-striped table-bordered table-condensed">
 
      {%- for field in schema.dataset_fields -%}
-        {%- if field.field_name in variable_measured and field.field_name not in exclude_fields -%}
+        {%- if field.field_name in variable_measured and field.field_name in exclude_fields -%}
 
         <tr>
         <th scope="row" class="dataset-label">{{
