@@ -47,7 +47,7 @@
 
  <div id="two" class="table table-striped table-bordered table-condensed">
      {%- for field in schema.dataset_fields -%}
-        {%- if field.field_name in variable_measured -%}
+        {%- if field.field_name in variable_measured and if field.field_name not in exclude_fields -%}
         <tr>
         <th scope="row" class="dataset-label">{{
           h.scheming_language_text(field.label) }}</th>
