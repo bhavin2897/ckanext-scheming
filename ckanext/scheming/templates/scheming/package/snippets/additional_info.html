@@ -7,8 +7,8 @@
 
 
 <div class="nav nav-tabs">
-    <button class="tablinks"  id="showTableA"> Additional </button>
-    <button class="tabllinks"  id="showTableB"> Measurement Values </button>
+    <button class="tablinks"  id="showMetadata"> Additional </button>
+    <button class="tabllinks"  id="showMeasureVal"> Measurement Values </button>
 </div>
 
     {%- set exclude_fields = [
@@ -85,11 +85,13 @@
 
 
 <script>
-  var tableMetadata = document.getElementById("tableMetadata");
+
+var tableMetadata = document.getElementById("tableMetadata");
 var tableMeasurVal = document.getElementById("tableMeasurVal");
 
-var btnTabA = document.getElementById("showTableA");
-var btnTabB = document.getElementById("showTableB");
+var btnTabA = document.getElementById("showMetadata");
+var btnTabB = document.getElementById("showMeasureVal");
+
 
 btnTabA.onclick = function () {
     tableMetadata.style.display = "table";
@@ -99,6 +101,8 @@ btnTabB.onclick = function () {
     tableMetadata.style.display = "none";
     tableMeasurVal.style.display = "table";
 }
+
+document.getElementById("showMetadata").click();
 </script>
 
 
