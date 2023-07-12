@@ -32,7 +32,7 @@
 {%- set variable_measured = 'variableMeasured' -%}
 
 
-
+{% block package_additional_info %}
     <tbody>
   {%- for field in schema.dataset_fields -%}
     {%- if field.field_name not in exclude_fields
@@ -53,6 +53,8 @@
       <td class="dataset-details">{{ _(pkg_dict.state) }}</td>
     </tr>
   {% endif %}
+
+    {% endblock %}
     </tbody>
 </table>
 
@@ -66,7 +68,7 @@
       </tr>
     </thead>
 
-
+{% block package_additional_info %}
      <tbody>
      {%- for field in schema.dataset_fields -%}
         {%- if field.field_name in variable_measured and field.field_name in exclude_fields -%}
@@ -82,7 +84,7 @@
       </tr>
      {%- endif -%}
   {%- endfor -%}
-
+     {% endblock %}
      </tbody>
  </table>
 
