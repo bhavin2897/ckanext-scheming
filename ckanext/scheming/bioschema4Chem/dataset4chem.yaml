@@ -117,7 +117,7 @@ dataset_fields:
 
 - field_name: measurement_technique
   label: Measurement Technique
-  display_snippet: text.html
+  display_snippet: link.html
 
 - field_name: variableMeasured
   label: Measurement Variables

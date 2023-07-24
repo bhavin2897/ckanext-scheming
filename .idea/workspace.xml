@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="maintainer email elimanted in fancy_type" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="removed box-showed when clicked">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,146 +74,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00001" summary="Added dataset4Chem.json &amp; project4Chem.json">
-      <created>1687786698053</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1687786698054</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added dataset4Chem.json &amp; project4Chem.json">
-      <created>1687786812849</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1687786812849</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Basic org to repo versioning">
-      <created>1687787643450</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1687787643450</updated>
-    </task>
-    <task id="LOCAL-00004" summary="resolved issue with naming the custom scheming org/repo">
-      <created>1687788978118</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1687788978118</updated>
-    </task>
-    <task id="LOCAL-00005" summary="first commit with new dataset schemas">
-      <created>1688975793153</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1688975793153</updated>
-    </task>
-    <task id="LOCAL-00006" summary="first commit with new dataset schemas">
-      <created>1688977080267</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1688977080267</updated>
-    </task>
-    <task id="LOCAL-00007" summary="first commit with new dataset schemas">
-      <created>1688977238107</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1688977238107</updated>
-    </task>
-    <task id="LOCAL-00008" summary="first commit with new dataset schemas">
-      <created>1688977741401</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1688977741401</updated>
-    </task>
-    <task id="LOCAL-00009" summary="undo mapping">
-      <created>1688977954697</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1688977954697</updated>
-    </task>
-    <task id="LOCAL-00010" summary="undo mapping">
-      <created>1688978022101</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1688978022101</updated>
-    </task>
-    <task id="LOCAL-00011" summary="delete nfdi4chem branch">
-      <created>1688978243784</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1688978243784</updated>
-    </task>
-    <task id="LOCAL-00012" summary="adding start_form_page">
-      <created>1688979167886</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1688979167886</updated>
-    </task>
-    <task id="LOCAL-00013" summary="added missing underscore">
-      <created>1688979457556</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1688979457556</updated>
-    </task>
-    <task id="LOCAL-00014" summary="added missing underscore">
-      <created>1688979517016</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1688979517016</updated>
-    </task>
-    <task id="LOCAL-00015" summary="added missing underscore">
-      <created>1688980448145</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1688980448145</updated>
-    </task>
-    <task id="LOCAL-00016" summary="added missing underscore">
-      <created>1688980878895</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1688980878895</updated>
-    </task>
-    <task id="LOCAL-00017" summary="added form_snippet">
-      <created>1688981129153</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1688981129153</updated>
-    </task>
-    <task id="LOCAL-00018" summary="test 1">
-      <created>1688982141663</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1688982141663</updated>
-    </task>
-    <task id="LOCAL-00019" summary="test 1">
-      <created>1688982643691</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1688982643691</updated>
-    </task>
-    <task id="LOCAL-00020" summary="test 2">
-      <created>1688982660469</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1688982660469</updated>
     </task>
     <task id="LOCAL-00021" summary="dataset4chem test initial">
       <created>1688989158493</created>
@@ -343,7 +208,217 @@
       <option name="project" value="LOCAL" />
       <updated>1689002484040</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="additioanl info changes">
+      <created>1689155014775</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155014775</updated>
+    </task>
+    <task id="LOCAL-00041" summary="additioanl info changes">
+      <created>1689155271481</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155271482</updated>
+    </task>
+    <task id="LOCAL-00042" summary="additioanl info changes">
+      <created>1689155397687</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155397687</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feature addinfo button">
+      <created>1689155464157</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155464157</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feature addinfo button">
+      <created>1689155503974</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155503974</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feature addinfo button">
+      <created>1689155635780</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155635780</updated>
+    </task>
+    <task id="LOCAL-00046" summary="exclude fields">
+      <created>1689155779016</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155779016</updated>
+    </task>
+    <task id="LOCAL-00047" summary="syntax of if">
+      <created>1689155809889</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1689155809889</updated>
+    </task>
+    <task id="LOCAL-00048" summary="display changes">
+      <created>1689156097621</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1689156097621</updated>
+    </task>
+    <task id="LOCAL-00049" summary="added exclude fields">
+      <created>1689156149313</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1689156149313</updated>
+    </task>
+    <task id="LOCAL-00050" summary="added exclude fields">
+      <created>1689158819246</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1689158819247</updated>
+    </task>
+    <task id="LOCAL-00051" summary="added exclude fields">
+      <created>1689158862118</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1689158862118</updated>
+    </task>
+    <task id="LOCAL-00052" summary="measurement and metadata tables modification">
+      <created>1689159586180</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1689159586180</updated>
+    </task>
+    <task id="LOCAL-00053" summary="major modifications with adiditonal tables">
+      <created>1689160370738</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1689160370738</updated>
+    </task>
+    <task id="LOCAL-00054" summary="removed aditional body block">
+      <created>1689160427967</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1689160427968</updated>
+    </task>
+    <task id="LOCAL-00055" summary="removed aditional body block">
+      <created>1689160610624</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1689160610624</updated>
+    </task>
+    <task id="LOCAL-00056" summary="major changes">
+      <created>1689160692148</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1689160692148</updated>
+    </task>
+    <task id="LOCAL-00057" summary="major changes">
+      <created>1689160724422</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1689160724422</updated>
+    </task>
+    <task id="LOCAL-00058" summary="li tag">
+      <created>1689160800281</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1689160800282</updated>
+    </task>
+    <task id="LOCAL-00059" summary="tab button tag">
+      <created>1689160995572</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1689160995572</updated>
+    </task>
+    <task id="LOCAL-00060" summary="tab button tag">
+      <created>1689161320320</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1689161320320</updated>
+    </task>
+    <task id="LOCAL-00061" summary="default table show &amp; name change">
+      <created>1689162349777</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1689162349777</updated>
+    </task>
+    <task id="LOCAL-00062" summary="added iupacName to the chemical info">
+      <created>1689162467140</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1689162467140</updated>
+    </task>
+    <task id="LOCAL-00063" summary="adding measurement values in one table">
+      <created>1689162626681</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1689162626681</updated>
+    </task>
+    <task id="LOCAL-00064" summary="css bootstrap changes">
+      <created>1689163483028</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1689163483028</updated>
+    </task>
+    <task id="LOCAL-00065" summary="css bootstrap to default">
+      <created>1689163611525</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1689163611525</updated>
+    </task>
+    <task id="LOCAL-00066" summary="css changes initial commit">
+      <created>1689166141638</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1689166141638</updated>
+    </task>
+    <task id="LOCAL-00067" summary="sticking few css changes">
+      <created>1689166947766</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1689166947766</updated>
+    </task>
+    <task id="LOCAL-00068" summary="removed box-showed when clicked">
+      <created>1689167223606</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1689167223606</updated>
+    </task>
+    <task id="LOCAL-00069" summary="removed box-showed when clicked">
+      <created>1689167390440</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1689167390440</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -360,31 +435,31 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="resolved issue with naming the custom scheming org/repo" />
-    <MESSAGE value="first commit with new dataset schemas" />
-    <MESSAGE value="undo mapping" />
-    <MESSAGE value="delete nfdi4chem branch" />
-    <MESSAGE value="adding start_form_page" />
-    <MESSAGE value="added missing underscore" />
-    <MESSAGE value="added form_snippet" />
-    <MESSAGE value="test 1" />
-    <MESSAGE value="test 2" />
-    <MESSAGE value="dataset4chem test initial" />
-    <MESSAGE value="added link.hmtl to display dataset4chem" />
-    <MESSAGE value="added all possible dataset types" />
-    <MESSAGE value="chnaged dataset type to &amp; in fancy_type.yaml" />
-    <MESSAGE value="matching with previous definition of fields" />
-    <MESSAGE value="delete whole folder" />
-    <MESSAGE value="testing if moved to a folder" />
-    <MESSAGE value="adding two new dataset types 'study' &amp; 'project'" />
-    <MESSAGE value="repeating fields added for project" />
-    <MESSAGE value="adding repeated authors" />
-    <MESSAGE value="deleted author email" />
     <MESSAGE value="merge with previous" />
     <MESSAGE value="trial to add display snippets to read.html" />
     <MESSAGE value="add molecular formula if exists" />
     <MESSAGE value="adding related identifier details to the view" />
     <MESSAGE value="maintainer email elimanted in fancy_type" />
-    <option name="LAST_COMMIT_MESSAGE" value="maintainer email elimanted in fancy_type" />
+    <MESSAGE value="additioanl info changes" />
+    <MESSAGE value="feature addinfo button" />
+    <MESSAGE value="exclude fields" />
+    <MESSAGE value="syntax of if" />
+    <MESSAGE value="display changes" />
+    <MESSAGE value="added exclude fields" />
+    <MESSAGE value="measurement and metadata tables modification" />
+    <MESSAGE value="major modifications with adiditonal tables" />
+    <MESSAGE value="removed aditional body block" />
+    <MESSAGE value="major changes" />
+    <MESSAGE value="li tag" />
+    <MESSAGE value="tab button tag" />
+    <MESSAGE value="default table show &amp; name change" />
+    <MESSAGE value="added iupacName to the chemical info" />
+    <MESSAGE value="adding measurement values in one table" />
+    <MESSAGE value="css bootstrap changes" />
+    <MESSAGE value="css bootstrap to default" />
+    <MESSAGE value="css changes initial commit" />
+    <MESSAGE value="sticking few css changes" />
+    <MESSAGE value="removed box-showed when clicked" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed box-showed when clicked" />
   </component>
 </project>
