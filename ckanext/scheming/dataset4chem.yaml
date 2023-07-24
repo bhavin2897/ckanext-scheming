@@ -3,7 +3,6 @@ dataset_type: dataset
 about: A reimplementation of the default CKAN dataset schema based on BioSchema.org
 about_url: https://bioschemas.org/profiles/Dataset/1.0-RELEASE
 
-
 dataset_fields:
 
 - field_name: title
