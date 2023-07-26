@@ -2,11 +2,11 @@
 
 {% block package_description %}
    {% if pkg.type == 'project' %}
-      <h4><span class="label label-warning"> Project </span> </h4>
+      <span class="label label-warning" style="font-size:15px;"> Project </span>
    {% elif pkg.type == 'study' %}
-      <h4><span class="label label-info"> Study </span> </h4>
+      <span class="label label-info" style="font-size:15px;"> Study </span>
    {% else %}
-      <h4><span class="label label-default"> Dataset </span> </h4>
+      <span class="label label-default" style="font-size:15px;"> Dataset </span>
    {% endif %}
 {{ super() }}
 {% endblock %}
