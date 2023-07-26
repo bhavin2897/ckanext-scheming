@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="removed box-showed when clicked">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
-    </list>
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="removed box-showed when clicked" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
