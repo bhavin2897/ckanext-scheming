@@ -16,6 +16,8 @@
         <li class="nav-item">
     <button class="btn btn-default shadow-none"  id="showMetadata"> Additional </button>
         </li>
+
+        {% if pkg_dict.type != 'project' %}
         <li class="nav-item">
     <button class="btn btn-default shadow-none"  id="showMeasureVal"> Measurement </button>
         </li>
