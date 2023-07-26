@@ -1,14 +1,14 @@
 {% extends "package/read.html" %}
 
 {% block package_description %}
-   {{ super() }}
    {% if pkg.type == 'project' %}
-      <span class="label label-primary"> Project </span>
+      <h6><span class="label label-warning"> Project </span> </h6>
    {% elif pkg.type == 'study' %}
-      <span class="label label-info"> Study </span>
+      <h6><span class="label label-info"> Study </span> </h6>
    {% else %}
-      <span class="label label-default"> Dataset </span>
+      <h6><span class="label label-default"> Dataset </span> </h6>
    {% endif %}
+{{ super() }}
 {% endblock %}
 
 {%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
