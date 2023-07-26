@@ -1,10 +1,7 @@
 {% extends "package/read.html" %}
 
-{% set dataset_type = dataset_type or pkg.type or 'dataset' %}
-
-{% block subtitle %}
+{% block primary_content_inner %}
    {{ super() }}
-
    {% if pkg.type == 'project' %}
       <h1 class="label label-primary"> Project </h1>
    {% elif pkg.type == 'study' %}
