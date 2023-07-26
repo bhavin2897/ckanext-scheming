@@ -1,9 +1,9 @@
 {% extends "package/read.html" %}
 
-{% block primary_content_inner %}
+{% block package_description %}
    {{ super() }}
    {% if pkg.type == 'project' %}
-      <h1 class="label label-primary"> Project </h1>
+      <span class="label label-primary"> Project </span>
    {% elif pkg.type == 'study' %}
       <span class="label label-info"> Study </span>
    {% else %}
