@@ -5,9 +5,9 @@
 {% block subtitle %}
    {{ super() }}
 
-   {% if dataset_type.title == 'project' %}
-      <span class="label label-primary"> Project </span>
-   {% elif dataset_type.title == 'study' %}
+   {% if pkg.type == 'project' %}
+      <h1 class="label label-primary"> Project </h1>
+   {% elif pkg.type == 'study' %}
       <span class="label label-info"> Study </span>
    {% else %}
       <span class="label label-default"> Dataset </span>
