@@ -1,5 +1,19 @@
 {% extends "package/read.html" %}
 
+{% set dataset_type = dataset_type or pkg.type or 'dataset' %}
+
+{% block subtitle %}
+   {{ super() }}
+
+   {% if dataset_type.title == 'project' %}
+      <span class="label label-primary"> Project </span>
+   {% elif dataset_type.title == 'study' %}
+      <span class="label label-info"> Study </span>
+   {% else %}
+      <span class="label label-default"> Dataset </span>
+   {% endif %}
+{% endblock %}
+
 {%- set schema = h.scheming_get_dataset_schema(dataset_type) -%}
 
 {% block package_notes %}
