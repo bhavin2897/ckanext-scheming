@@ -1,4 +1,6 @@
-{{ data['variableMeasured_name'] }}
+
+{% set display_label = data['variableMeasured_name'] ~ ':' ~ data['variableMeasured_value'] %}
+{% set hypertext = data['variableMeasured_tsurl'] %}
 
 {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank') }}
 
