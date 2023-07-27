@@ -1,6 +1,6 @@
-{% set hypertext = data[field.field_name] %}
+{% set hypertext = field.field_name %}
 {% set measu_value = data[field.field_name]%}
 {% set display_label = data[field.field_name] ~ ':' ~ data[field.field_name]  %}
 
 
-{{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank') }}
+{{ h.link_to(hypertext, hypertext, rel=field.display_property, target='_blank') }}
