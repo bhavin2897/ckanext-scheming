@@ -1,4 +1,3 @@
-{% set hypertext = data[field.variableMeasured_tsurl] %}
-
+{% set hypertext = 'https://terminology.nfdi4chem.de/ts/ontologies/nmrcv/terms?iri=http%3A%2F%2FnmrML.org%2FnmrCV%23NMR%3A1400083' %}
 
 {{ h.link_to(data[field.field_name], hypertext, rel=field.display_property, target='_blank') }}
