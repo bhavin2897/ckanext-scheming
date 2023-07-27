@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="revise">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" afterDir="false" />
-    </list>
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="revise" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,27 +69,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00036" summary="trial to add display snippets to read.html">
-      <created>1689001327016</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1689001327016</updated>
-    </task>
-    <task id="LOCAL-00037" summary="add molecular formula if exists">
-      <created>1689001660147</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1689001660147</updated>
-    </task>
-    <task id="LOCAL-00038" summary="adding related identifier details to the view">
-      <created>1689001817637</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1689001817638</updated>
     </task>
     <task id="LOCAL-00039" summary="maintainer email elimanted in fancy_type">
       <created>1689002484040</created>
@@ -416,7 +392,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690477016368</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="revise">
+      <created>1690477789398</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1690477789398</updated>
+    </task>
+    <task id="LOCAL-00086" summary="revise">
+      <created>1690477916562</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1690477916562</updated>
+    </task>
+    <task id="LOCAL-00087" summary="revise">
+      <created>1690477996421</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1690477996421</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
