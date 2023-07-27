@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="test field name">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="revise">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" afterDir="false" />
     </list>
@@ -72,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00035" summary="merge with previous">
-      <created>1688999662236</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1688999662236</updated>
     </task>
     <task id="LOCAL-00036" summary="trial to add display snippets to read.html">
       <created>1689001327016</created>
@@ -416,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690476934756</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="revise">
+      <created>1690477016368</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1690477016368</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -433,7 +433,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="exclude fields" />
     <MESSAGE value="syntax of if" />
     <MESSAGE value="display changes" />
     <MESSAGE value="added exclude fields" />
@@ -458,6 +457,7 @@
     <MESSAGE value="field name  reversing" />
     <MESSAGE value="field name reversing" />
     <MESSAGE value="test field name" />
-    <option name="LAST_COMMIT_MESSAGE" value="test field name" />
+    <MESSAGE value="revise" />
+    <option name="LAST_COMMIT_MESSAGE" value="revise" />
   </component>
 </project>
