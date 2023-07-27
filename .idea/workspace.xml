@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="field name reversing">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="test field name">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,13 +72,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00032" summary="deleted author email">
-      <created>1688999499008</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1688999499008</updated>
     </task>
     <task id="LOCAL-00033" summary="deleted author email">
       <created>1688999525027</created>
@@ -415,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690471796576</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="test field name">
+      <created>1690474523817</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1690474523817</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -432,7 +433,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="feature addinfo button" />
     <MESSAGE value="exclude fields" />
     <MESSAGE value="syntax of if" />
     <MESSAGE value="display changes" />
@@ -457,6 +457,7 @@
     <MESSAGE value="concatenation of two strings" />
     <MESSAGE value="field name  reversing" />
     <MESSAGE value="field name reversing" />
-    <option name="LAST_COMMIT_MESSAGE" value="field name reversing" />
+    <MESSAGE value="test field name" />
+    <option name="LAST_COMMIT_MESSAGE" value="test field name" />
   </component>
 </project>
