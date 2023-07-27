@@ -124,6 +124,7 @@ dataset_fields:
   repeating_subfields:
     - field_name: variableMeasured_name
       label: Measured Variable Name
+      display_snippet: hyperlink.html
 
     - field_name: variableMeasured_propertyID
       label: IRI
@@ -133,7 +134,7 @@ dataset_fields:
 
     - field_name: variableMeasured_tsurl
       label: TS URL
-      display_snippet: link.html
+
 
 
 # datetime fields

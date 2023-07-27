@@ -1,0 +1,3 @@
+{% set hypertext = data[field.variableMeasured_tsurl] %}
+
+{{ h.link_to(data[field.field_name], hypertext, rel=field.display_property, target='_blank') }}
