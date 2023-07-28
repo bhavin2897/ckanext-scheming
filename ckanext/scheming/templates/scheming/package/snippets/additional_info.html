@@ -89,7 +89,7 @@
     </thead>
      <tbody>
      {%- for field in schema.dataset_fields -%}
-        {%- if field.field_name in variable_measured and field.field_name in exclude_fields and field.field_name not in tb2_exclude -%}
+        {%- if field.field_name in variable_measured and field.field_name in exclude_fields -%}
 
         <tr>
         <th scope="row" class="dataset-label">{{
