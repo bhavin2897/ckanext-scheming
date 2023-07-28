@@ -90,7 +90,6 @@
      <tbody>
      {%- for field in schema.dataset_fields -%}
         {%- if field.field_name in variable_measured and field.field_name in exclude_fields  -%}
-            {%- if field.field_name not in tb2_exclude -%}
         <tr>
         <th scope="row" class="dataset-label">{{
           h.scheming_language_text(field.label) }}</th>
@@ -100,7 +99,7 @@
           }}"{% endif %}>{%- snippet 'scheming/snippets/display_field.html',
           field=field, data=pkg_dict, schema=schema -%}</td>
       </tr>
-        {%- endif -%}
+
         {%- endif -%}
      {%- endfor -%}
 

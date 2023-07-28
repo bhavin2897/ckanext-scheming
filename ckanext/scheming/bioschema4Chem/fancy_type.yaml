@@ -127,7 +127,7 @@ dataset_fields:
 
     - field_name: variableMeasured_tsurl
       label: TS URL
-      display_snippet: link.html
+      display_snippet: nothing.html
 
 
 # datetime fields
