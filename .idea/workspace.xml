@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="revise" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="removed TS url metadata field">
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,20 +71,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00039" summary="maintainer email elimanted in fancy_type">
-      <created>1689002484040</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1689002484040</updated>
-    </task>
-    <task id="LOCAL-00040" summary="additioanl info changes">
-      <created>1689155014775</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1689155014775</updated>
     </task>
     <task id="LOCAL-00041" summary="additioanl info changes">
       <created>1689155271481</created>
@@ -413,7 +401,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690477996421</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="obtain this on both yaml files">
+      <created>1690529265305</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1690529265305</updated>
+    </task>
+    <task id="LOCAL-00089" summary="removed TS url metadata field">
+      <created>1690529865740</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1690529865740</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,8 +432,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="syntax of if" />
-    <MESSAGE value="display changes" />
     <MESSAGE value="added exclude fields" />
     <MESSAGE value="measurement and metadata tables modification" />
     <MESSAGE value="major modifications with adiditonal tables" />
@@ -455,6 +455,8 @@
     <MESSAGE value="field name reversing" />
     <MESSAGE value="test field name" />
     <MESSAGE value="revise" />
-    <option name="LAST_COMMIT_MESSAGE" value="revise" />
+    <MESSAGE value="obtain this on both yaml files" />
+    <MESSAGE value="removed TS url metadata field" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed TS url metadata field" />
   </component>
 </project>
