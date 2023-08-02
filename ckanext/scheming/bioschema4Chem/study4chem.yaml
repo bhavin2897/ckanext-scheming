@@ -134,17 +134,17 @@ dataset_fields:
     - field_name: variableMeasured_tsurl
       label: TS URL
 
-- field_name: related_project
-  label: Related Project
-  preset: related_entity
-  current_entity: package
-  current_entity_type: study
-  related_entity: package
-  related_entity_type: project
-  relation_type: child_of
-  multiple: true
-  updatable_only: false
-  required: false
+# field_name: related_project
+# label: Related Project
+# preset: related_entity
+# current_entity: package
+# current_entity_type: study
+# related_entity: package
+# related_entity_type: project
+# relation_type: child_of
+# multiple: true
+# updatable_only: false
+# required: false
 
 - #field_name: related_projects
   #label: Related Projects
