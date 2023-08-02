@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="addition and deletion of preset of related_entity">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="missing preset">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/package_item.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/package_item.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,13 +89,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00057" summary="major changes">
-      <created>1689160724422</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1689160724422</updated>
     </task>
     <task id="LOCAL-00058" summary="li tag">
       <created>1689160800281</created>
@@ -432,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690976018321</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="missing preset">
+      <created>1690976787609</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1690976787609</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -449,7 +450,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="css bootstrap to default" />
     <MESSAGE value="css changes initial commit" />
     <MESSAGE value="sticking few css changes" />
     <MESSAGE value="removed box-showed when clicked" />
@@ -474,6 +474,7 @@
     <MESSAGE value="outside scheming html" />
     <MESSAGE value="ckan extends" />
     <MESSAGE value="addition and deletion of preset of related_entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="addition and deletion of preset of related_entity" />
+    <MESSAGE value="missing preset" />
+    <option name="LAST_COMMIT_MESSAGE" value="missing preset" />
   </component>
 </project>

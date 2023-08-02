@@ -138,19 +138,6 @@ dataset_fields:
       label: TS URL
       display_snippet: null
 
-# field_name: related_projects
-# label: Related Projects
-# preset: related_entity
-# current_entity: package
-# current_entity_type: dataset
-# related_entity: package
-# related_entity_type: study
-# relation_type: parent_of
-# multiple: true
-# updatable_only: false
-# required: true
-
-# datetime fields
 
 - field_name: metadata_created
   label: MetadataCreated
