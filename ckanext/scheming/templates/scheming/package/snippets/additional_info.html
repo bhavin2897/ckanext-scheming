@@ -65,7 +65,7 @@
         <td class="dataset-details"{%
           if field.display_property %} property="{{ field.display_property
           }}"{% endif %}>{%- snippet 'scheming/snippets/display_field.html',
-          field=field, data=pkg_dict, schema=schema -%}</td>
+          field=field, data=pkg_dict, entity_type=schema -%}</td>
       </tr>
     {%- endif -%}
   {%- endfor -%}
@@ -97,7 +97,7 @@
             {% if field.display_property %}
             property="{{ field.display_property
           }}"{% endif %}>{%- snippet 'scheming/snippets/display_field.html',
-          field=field, data=pkg_dict, schema=schema -%}</td>
+          field=field, data=pkg_dict, entity_type=schema -%}</td>
       </tr>
 
         {%- endif -%}
@@ -106,7 +106,6 @@
      {% endif %}
      </tbody>
  </table>
-
 
 
 <script>

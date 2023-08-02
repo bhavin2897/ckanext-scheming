@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="added missing preset">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="addition of display_snippet as null in additional_table">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/nothing.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
     </list>
@@ -91,13 +88,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00060" summary="tab button tag">
-      <created>1689161320320</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1689161320320</updated>
     </task>
     <task id="LOCAL-00061" summary="default table show &amp; name change">
       <created>1689162349777</created>
@@ -435,7 +425,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690978105658</updated>
     </task>
-    <option name="localTasksCounter" value="109" />
+    <task id="LOCAL-00109" summary="addition of display_snippet as null in additional_table">
+      <created>1690981344488</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1690981344488</updated>
+    </task>
+    <option name="localTasksCounter" value="110" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,7 +449,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="sticking few css changes" />
     <MESSAGE value="removed box-showed when clicked" />
     <MESSAGE value="added hyperlink to the table" />
     <MESSAGE value="manual addition" />
@@ -477,6 +473,7 @@
     <MESSAGE value="addition and deletion of preset of related_entity" />
     <MESSAGE value="missing preset" />
     <MESSAGE value="added missing preset" />
-    <option name="LAST_COMMIT_MESSAGE" value="added missing preset" />
+    <MESSAGE value="addition of display_snippet as null in additional_table" />
+    <option name="LAST_COMMIT_MESSAGE" value="addition of display_snippet as null in additional_table" />
   </component>
 </project>
