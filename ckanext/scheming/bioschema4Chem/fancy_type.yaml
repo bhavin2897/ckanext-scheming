@@ -108,7 +108,6 @@ dataset_fields:
 
 - field_name: measurement_technique
   label: Measurement Technique
-  display_snippet: null
 
 
 - field_name: variableMeasured

@@ -2,7 +2,7 @@
 
 {% block subfield_display %}
 
-    {% if entity_type.dataset_type == 'fancy_type'  %}
+    {% if entity_type.dataset_type == 'fancy_type' or entity_type.dataset_type == 'dataset' %}
 
   {% for field_data in fields %}
 
