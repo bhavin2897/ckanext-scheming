@@ -2,30 +2,7 @@
 
 {% block subfield_display %}
 
-    {% if entity_type.dataset_type == 'fancy_type' or entity_type.dataset_type == 'dataset' %}
-
-  {% for field_data in fields %}
-
-          {% for subfield in field.repeating_subfields %}
-          {% if subfield.display_snippet is not none%}
-            <dd>
-            {%- snippet 'scheming/snippets/display_field.html',
-              field=subfield,
-              data=field_data,
-              entity_type=entity_type,
-              object_type=object_type
-            -%}
-              {% endif %}
-
-            </dd>
-          <p></p>
-          {% endfor %}
-    {% endfor %}
-
-
-
-    {% else %}
-
+    {% if entity_type.dataset_type == 'project' or entity_type.dataset_type == 'study' %}
 
     {% for field_data in fields %}
         <div class="panel panel-default">
@@ -51,6 +28,32 @@
           </div>
         </div>
     {% endfor %}
+
+    {% else %}
+
+
+  {% for field_data in fields %}
+
+          {% for subfield in field.repeating_subfields %}
+          {% if subfield.display_snippet is not none%}
+            <dd>
+            {%- snippet 'scheming/snippets/display_field.html',
+              field=subfield,
+              data=field_data,
+              entity_type=entity_type,
+              object_type=object_type
+            -%}
+              {% endif %}
+
+            </dd>
+          <p></p>
+          {% endfor %}
+    {% endfor %}
+
+
+
+
+
 
     {% endif %}
 
