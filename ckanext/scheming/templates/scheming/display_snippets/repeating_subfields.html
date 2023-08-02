@@ -9,6 +9,7 @@
       <div class="panel-body">
         <dl class="scheming-subfield-list">
           {% for subfield in field.repeating_subfields %}
+          {% if subfield.display_snippet is not none %}
             <dt class="dataset-label">
               {{ h.scheming_language_text(subfield.label) }}
             </dt>
@@ -19,6 +20,7 @@
               entity_type=entity_type,
               object_type=object_type
             -%}
+              {% endif %}
             </dd>
           {% endfor %}
         </dl>

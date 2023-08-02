@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="added missing preset" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="added missing preset">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/nothing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,13 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00059" summary="tab button tag">
-      <created>1689160995572</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1689160995572</updated>
     </task>
     <task id="LOCAL-00060" summary="tab button tag">
       <created>1689161320320</created>
@@ -428,7 +428,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690977908757</updated>
     </task>
-    <option name="localTasksCounter" value="108" />
+    <task id="LOCAL-00108" summary="added missing preset">
+      <created>1690978105658</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1690978105658</updated>
+    </task>
+    <option name="localTasksCounter" value="109" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
