@@ -128,15 +128,27 @@ dataset_fields:
 
     - field_name: variableMeasured_propertyID
       label: IRI
+      display_snippet: null
 
     - field_name: variableMeasured_value
       label: Measured Value
+      display_snippet: null
 
     - field_name: variableMeasured_tsurl
       label: TS URL
-      display_snippet : link.html
+      display_snippet: null
 
-
+# field_name: related_projects
+# label: Related Projects
+# preset: related_entity
+# current_entity: package
+# current_entity_type: dataset
+# related_entity: package
+# related_entity_type: study
+# relation_type: parent_of
+# multiple: true
+# updatable_only: false
+# required: true
 
 # datetime fields
 

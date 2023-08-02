@@ -121,13 +121,15 @@ dataset_fields:
 
     - field_name: variableMeasured_propertyID
       label: IRI
+      display_snippet: null
 
     - field_name: variableMeasured_value
       label: Measured Value
+      display_snippet: null
 
     - field_name: variableMeasured_tsurl
       label: TS URL
-      display_snippet: nothing.html
+      display_snippet: null
 
 
 # datetime fields
@@ -146,6 +148,18 @@ dataset_fields:
   label: MetadataPublished
   form_placeholder: 1970-01-01
   form_snippet: datetime_tz.html
+
+#- field_name: related_study
+#label: Related Study
+#preset: related_entity
+#current_entity: package
+#current_entity_type: fancy_type
+#related_entity: package
+#related_entity_type: study
+#relation_type: child_of
+#multiple: true
+#updatable_only: false
+#required: false
 
 resource_fields:
 

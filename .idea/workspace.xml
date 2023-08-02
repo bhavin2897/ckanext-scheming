@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="added empty html" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="ckan extends">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/package_item.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/package_item.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +45,20 @@
       </list>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/package_form.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/snippets/package_item.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/data_page_visuals.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectId" id="24K411XkBzcZeeF63p4GJB9QVaE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,15 +68,17 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ckanext-relationship" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets" />
+      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets" />
+      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/BioSchema4Chem/" />
     </key>
@@ -69,55 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00049" summary="added exclude fields">
-      <created>1689156149313</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1689156149313</updated>
-    </task>
-    <task id="LOCAL-00050" summary="added exclude fields">
-      <created>1689158819246</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1689158819247</updated>
-    </task>
-    <task id="LOCAL-00051" summary="added exclude fields">
-      <created>1689158862118</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1689158862118</updated>
-    </task>
-    <task id="LOCAL-00052" summary="measurement and metadata tables modification">
-      <created>1689159586180</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1689159586180</updated>
-    </task>
-    <task id="LOCAL-00053" summary="major modifications with adiditonal tables">
-      <created>1689160370738</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1689160370738</updated>
-    </task>
-    <task id="LOCAL-00054" summary="removed aditional body block">
-      <created>1689160427967</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1689160427968</updated>
-    </task>
-    <task id="LOCAL-00055" summary="removed aditional body block">
-      <created>1689160610624</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1689160610624</updated>
     </task>
     <task id="LOCAL-00056" summary="major changes">
       <created>1689160692148</created>
@@ -413,7 +386,56 @@
       <option name="project" value="LOCAL" />
       <updated>1690535204319</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="hovertext on hyperlink">
+      <created>1690536323137</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1690536323137</updated>
+    </task>
+    <task id="LOCAL-00099" summary="elimnate var_value with text">
+      <created>1690536429403</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1690536429404</updated>
+    </task>
+    <task id="LOCAL-00100" summary="label at the dataset list view">
+      <created>1690549191363</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1690549191363</updated>
+    </task>
+    <task id="LOCAL-00101" summary="extends missing">
+      <created>1690549309420</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1690549309420</updated>
+    </task>
+    <task id="LOCAL-00102" summary="extends missing">
+      <created>1690549359627</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1690549359627</updated>
+    </task>
+    <task id="LOCAL-00103" summary="outside scheming html">
+      <created>1690550289248</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1690550289248</updated>
+    </task>
+    <task id="LOCAL-00104" summary="ckan extends">
+      <created>1690550578553</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1690550578553</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -430,12 +452,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="major changes" />
-    <MESSAGE value="li tag" />
-    <MESSAGE value="tab button tag" />
-    <MESSAGE value="default table show &amp; name change" />
-    <MESSAGE value="added iupacName to the chemical info" />
-    <MESSAGE value="adding measurement values in one table" />
     <MESSAGE value="css bootstrap changes" />
     <MESSAGE value="css bootstrap to default" />
     <MESSAGE value="css changes initial commit" />
@@ -455,6 +471,12 @@
     <MESSAGE value="hid ts url field" />
     <MESSAGE value="undo hid" />
     <MESSAGE value="added empty html" />
-    <option name="LAST_COMMIT_MESSAGE" value="added empty html" />
+    <MESSAGE value="hovertext on hyperlink" />
+    <MESSAGE value="elimnate var_value with text" />
+    <MESSAGE value="label at the dataset list view" />
+    <MESSAGE value="extends missing" />
+    <MESSAGE value="outside scheming html" />
+    <MESSAGE value="ckan extends" />
+    <option name="LAST_COMMIT_MESSAGE" value="ckan extends" />
   </component>
 </project>
