@@ -167,6 +167,7 @@ dataset_fields:
   required: false
   display_snippet: null
 
+#TODO: Need to  be changed
 #relationship to dataset
 - field_name: related_dataset
   label: Related Dataset
@@ -174,7 +175,7 @@ dataset_fields:
   current_entity: package
   current_entity_type: study
   related_entity: package
-  related_entity_type: dataset
+  related_entity_type: fancy_type
   relation_type: parent_of
   multiple: true
   updatable_only: false
