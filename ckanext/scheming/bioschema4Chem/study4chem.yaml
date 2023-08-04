@@ -153,6 +153,33 @@ dataset_fields:
   form_placeholder: 1970-01-01
   form_snippet: datetime_tz.html
 
+#relationship to project
+- field_name: related_project
+  label: Related Project
+  preset: related_entity
+  current_entity: package
+  current_entity_type: study
+  related_entity: package
+  related_entity_type: project
+  relation_type: child_of
+  multiple: true
+  updatable_only: false
+  required: false
+  display_snippet: null
+
+#relationship to dataset
+- field_name: related_dataset
+  label: Related Dataset
+  preset: related_entity
+  current_entity: package
+  current_entity_type: study
+  related_entity: package
+  related_entity_type: dataset
+  relation_type: parent_of
+  multiple: true
+  updatable_only: false
+  required: false
+  display_snippet: null
 
 resource_fields:
 

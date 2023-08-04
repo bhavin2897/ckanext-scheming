@@ -112,6 +112,18 @@ dataset_fields:
   form_snippet: datetime_tz.html
 
 
+#relationship to study
+- field_name: related_study
+  label: Related Study
+  preset: related_entity
+  current_entity: package
+  current_entity_type: project
+  related_entity: package
+  related_entity_type: study
+  relation_type: parent_of
+  multiple: true
+  updatable_only: false
+  required: false
 
 resource_fields:
 

@@ -1,0 +1,6 @@
+{% set related_label = field.label %}
+
+<h2>  {{ related_label }} </h2>
+
+{% snippet 'scheming/display_snippets/related_entity.html',
+                field=field, data=data  %}

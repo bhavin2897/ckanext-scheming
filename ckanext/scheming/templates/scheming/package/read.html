@@ -47,6 +47,18 @@
   {% endif %}
 {% endblock %}
 
+  {% block package_resources %}
+    {{ super() }}
+
+    {% for field in schema.dataset_fields %}
+        {% if field.field_name == 'related_study' or field.field_name == 'related_dataset' or field.field_name == 'related_project' %}
+            {% snippet 'snippets/related_fields_internal.html',
+                field=field, data=pkg_dict, entity_type=schema %}
+        {% endif %}
+    {% endfor %}
+
+    {% endblock %}
+
 {% block package_additional_info %}
   {% snippet "snippets/related_identifier.html", pkg = pkg %}
   {% snippet "scheming/package/snippets/additional_info.html",

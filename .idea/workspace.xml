@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="test server fancy_type entity" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="reversed">
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/related_entity.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/related_fields_internal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/presets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/presets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +32,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -61,10 +71,12 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ckanext-relationship" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets" />
+      <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/form_snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming" />
@@ -84,55 +96,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00063" summary="adding measurement values in one table">
-      <created>1689162626681</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1689162626681</updated>
-    </task>
-    <task id="LOCAL-00064" summary="css bootstrap changes">
-      <created>1689163483028</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1689163483028</updated>
-    </task>
-    <task id="LOCAL-00065" summary="css bootstrap to default">
-      <created>1689163611525</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1689163611525</updated>
-    </task>
-    <task id="LOCAL-00066" summary="css changes initial commit">
-      <created>1689166141638</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1689166141638</updated>
-    </task>
-    <task id="LOCAL-00067" summary="sticking few css changes">
-      <created>1689166947766</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1689166947766</updated>
-    </task>
-    <task id="LOCAL-00068" summary="removed box-showed when clicked">
-      <created>1689167223606</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1689167223606</updated>
-    </task>
-    <task id="LOCAL-00069" summary="removed box-showed when clicked">
-      <created>1689167390440</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1689167390440</updated>
     </task>
     <task id="LOCAL-00070" summary="added hyperlink to the table">
       <created>1690468784186</created>
@@ -428,7 +391,56 @@
       <option name="project" value="LOCAL" />
       <updated>1690986561318</updated>
     </task>
-    <option name="localTasksCounter" value="112" />
+    <task id="LOCAL-00112" summary="test server fancy_type entity">
+      <created>1690986644167</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1690986644167</updated>
+    </task>
+    <task id="LOCAL-00113" summary="test server fancy_type entity">
+      <created>1690986668788</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1690986668789</updated>
+    </task>
+    <task id="LOCAL-00114" summary="test server fancy_type entity">
+      <created>1690986809811</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1690986809811</updated>
+    </task>
+    <task id="LOCAL-00115" summary="test server fancy_type entity">
+      <created>1690986972667</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1690986972667</updated>
+    </task>
+    <task id="LOCAL-00116" summary="test server fancy_type entity">
+      <created>1690987448138</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1690987448138</updated>
+    </task>
+    <task id="LOCAL-00117" summary="reversed">
+      <created>1690987652869</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1690987652869</updated>
+    </task>
+    <task id="LOCAL-00118" summary="reversed">
+      <created>1690987705208</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1690987705208</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +457,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="manual addition" />
     <MESSAGE value="removal manual addition &amp; measurement" />
     <MESSAGE value="concatenation of two strings" />
     <MESSAGE value="field name  reversing" />
@@ -470,6 +481,7 @@
     <MESSAGE value="addition of display_snippet as null in additional_table" />
     <MESSAGE value="repeating subfields UI changes" />
     <MESSAGE value="test server fancy_type entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="test server fancy_type entity" />
+    <MESSAGE value="reversed" />
+    <option name="LAST_COMMIT_MESSAGE" value="reversed" />
   </component>
 </project>
