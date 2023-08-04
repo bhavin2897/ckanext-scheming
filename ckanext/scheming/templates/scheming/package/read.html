@@ -47,6 +47,7 @@
   {% endif %}
 {% endblock %}
 
+
   {% block package_resources %}
     {{ super() }}
 
@@ -58,6 +59,7 @@
     {% endfor %}
 
     {% endblock %}
+
 
 {% block package_additional_info %}
   {% snippet "snippets/related_identifier.html", pkg = pkg %}
