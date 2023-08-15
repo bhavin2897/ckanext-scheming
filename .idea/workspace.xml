@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="reversed">
-      <change afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/related_entity.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/related_fields_internal.html" afterDir="false" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="testing on server with fancy_type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/presets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/presets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/related_fields_internal.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,27 +91,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00070" summary="added hyperlink to the table">
-      <created>1690468784186</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1690468784187</updated>
-    </task>
-    <task id="LOCAL-00071" summary="added hyperlink to the table">
-      <created>1690468902314</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1690468902314</updated>
-    </task>
-    <task id="LOCAL-00072" summary="added hyperlink to the table">
-      <created>1690468957558</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1690468957558</updated>
     </task>
     <task id="LOCAL-00073" summary="manual addition">
       <created>1690469287133</created>
@@ -440,7 +414,28 @@
       <option name="project" value="LOCAL" />
       <updated>1690987705208</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="schemas and html changed as per relationship plugin">
+      <created>1691156153443</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1691156153444</updated>
+    </task>
+    <task id="LOCAL-00120" summary="elminated related field and changed on package view">
+      <created>1691158810217</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1691158810217</updated>
+    </task>
+    <task id="LOCAL-00121" summary="testing on server with fancy_type">
+      <created>1691159131421</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1691159131421</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -457,9 +452,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="removal manual addition &amp; measurement" />
-    <MESSAGE value="concatenation of two strings" />
-    <MESSAGE value="field name  reversing" />
     <MESSAGE value="field name reversing" />
     <MESSAGE value="test field name" />
     <MESSAGE value="revise" />
@@ -482,6 +474,9 @@
     <MESSAGE value="repeating subfields UI changes" />
     <MESSAGE value="test server fancy_type entity" />
     <MESSAGE value="reversed" />
-    <option name="LAST_COMMIT_MESSAGE" value="reversed" />
+    <MESSAGE value="schemas and html changed as per relationship plugin" />
+    <MESSAGE value="elminated related field and changed on package view" />
+    <MESSAGE value="testing on server with fancy_type" />
+    <option name="LAST_COMMIT_MESSAGE" value="testing on server with fancy_type" />
   </component>
 </project>

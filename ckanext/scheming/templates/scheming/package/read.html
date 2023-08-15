@@ -51,12 +51,22 @@
   {% block package_resources %}
     {{ super() }}
 
-    {% for field in schema.dataset_fields %}
-        {% if field.field_name == 'related_study' or field.field_name == 'related_dataset' or field.field_name == 'related_project' %}
-            {% snippet 'snippets/related_fields_internal.html',
-                field=field, data=pkg_dict, entity_type=schema %}
+    {% if pkg_dict.related_project or  pkg_dict.related_study or pkg_dict.related_dataset %}
+    {% for field in schema.dataset_fields  %}
+
+        {% if field.field_name == 'related_study' %}
+            {% snippet 'scheming/schema_package_resource.html', field=field, data=pkg_dict%}
+
+        {% elif field.field_name == 'related_dataset' %}
+            {% snippet 'scheming/schema_package_resource.html', field=field, data=pkg_dict%}
+
+        {% elif field.field_name == 'related_project' %}
+            {% snippet 'scheming/schema_package_resource.html', field=field, data=pkg_dict%}
+        {% else %}
+
         {% endif %}
     {% endfor %}
+    {% endif %}
 
     {% endblock %}
 
@@ -66,3 +76,6 @@
   {% snippet "scheming/package/snippets/additional_info.html",
     pkg_dict=pkg, dataset_type=dataset_type, schema=schema %}
 {% endblock %}
+
+
+
