@@ -152,14 +152,6 @@
         "display_snippet": "select.html",
         "validators": "scheming_required scheming_choices"
       }
-    },
-    {
-      "preset_name": "related_entity",
-    "values":{
-      "form_snippet": "related_entity.html",
-      "display_snippet": "related_entity.html",
-      "validators": "relationship_related_entity"
-      }
     }
   ]
 }
