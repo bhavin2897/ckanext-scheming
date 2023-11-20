@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="testing on server with fancy_type">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="collapse bar for related types with description">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/snippets/related_fields_internal.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +41,13 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/related_identifier.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/package_form.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/snippets/package_item.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/data_page_visuals.html" root0="FORCE_HIGHLIGHTING" />
@@ -91,13 +90,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00073" summary="manual addition">
-      <created>1690469287133</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1690469287133</updated>
     </task>
     <task id="LOCAL-00074" summary="manual addition">
       <created>1690469548151</created>
@@ -435,7 +427,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691159131421</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="collapse bar for related types with description">
+      <created>1692104615661</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1692104615661</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,7 +451,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="field name reversing" />
     <MESSAGE value="test field name" />
     <MESSAGE value="revise" />
     <MESSAGE value="obtain this on both yaml files" />
@@ -477,6 +475,7 @@
     <MESSAGE value="schemas and html changed as per relationship plugin" />
     <MESSAGE value="elminated related field and changed on package view" />
     <MESSAGE value="testing on server with fancy_type" />
-    <option name="LAST_COMMIT_MESSAGE" value="testing on server with fancy_type" />
+    <MESSAGE value="collapse bar for related types with description" />
+    <option name="LAST_COMMIT_MESSAGE" value="collapse bar for related types with description" />
   </component>
 </project>

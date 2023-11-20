@@ -1,0 +1,7 @@
+
+{% set display_label = data['measurement_technique']  %}
+{% set hypertext = data['measurement_technique_iri'] %}
+{% set hovertext = data['variableMeasured_propertyID'] %}
+
+{{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=display_label) }}
+
