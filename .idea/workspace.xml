@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="collapse bar for related types with description">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="undo the last commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,8 +40,15 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink_mT.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/ckan_dataset.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/plugins.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/presets.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets/display_field.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/related_identifier.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets/errors.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/package_form.html" root0="FORCE_HIGHLIGHTING" />
@@ -90,27 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00074" summary="manual addition">
-      <created>1690469548151</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1690469548151</updated>
-    </task>
-    <task id="LOCAL-00075" summary="manual addition">
-      <created>1690469636357</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1690469636357</updated>
-    </task>
-    <task id="LOCAL-00076" summary="removal manual addition &amp; measurement">
-      <created>1690471035810</created>
-      <option name="number" value="00076" />
-      <option name="presentableId" value="LOCAL-00076" />
-      <option name="project" value="LOCAL" />
-      <updated>1690471035810</updated>
     </task>
     <task id="LOCAL-00077" summary="removal manual addition &amp; measurement">
       <created>1690471073787</created>
@@ -434,7 +420,28 @@
       <option name="project" value="LOCAL" />
       <updated>1692104615661</updated>
     </task>
-    <option name="localTasksCounter" value="123" />
+    <task id="LOCAL-00123" summary="measuremnt Technique with IRI">
+      <created>1700480710055</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1700480710055</updated>
+    </task>
+    <task id="LOCAL-00124" summary="removed preset">
+      <created>1700503071835</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1700503071835</updated>
+    </task>
+    <task id="LOCAL-00125" summary="undo the last commit">
+      <created>1700503299045</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1700503299045</updated>
+    </task>
+    <option name="localTasksCounter" value="126" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -451,9 +458,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test field name" />
-    <MESSAGE value="revise" />
-    <MESSAGE value="obtain this on both yaml files" />
     <MESSAGE value="removed TS url metadata field" />
     <MESSAGE value="revive the idea of hiding ts URl field" />
     <MESSAGE value="hid ts url field" />
@@ -476,6 +480,9 @@
     <MESSAGE value="elminated related field and changed on package view" />
     <MESSAGE value="testing on server with fancy_type" />
     <MESSAGE value="collapse bar for related types with description" />
-    <option name="LAST_COMMIT_MESSAGE" value="collapse bar for related types with description" />
+    <MESSAGE value="measuremnt Technique with IRI" />
+    <MESSAGE value="removed preset" />
+    <MESSAGE value="undo the last commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="undo the last commit" />
   </component>
 </project>
