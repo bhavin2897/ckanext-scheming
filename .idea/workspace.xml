@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="undo the last commit">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="bug fix: removing measurement_technique_iri in addt. table" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,13 +95,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00077" summary="removal manual addition &amp; measurement">
-      <created>1690471073787</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1690471073787</updated>
     </task>
     <task id="LOCAL-00078" summary="concatenation of two strings">
       <created>1690471423611</created>
@@ -441,7 +432,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700503299045</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="bug fix: removing measurement_technique_iri in addt. table">
+      <created>1713186700538</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1713186700539</updated>
+    </task>
+    <option name="localTasksCounter" value="127" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -458,7 +456,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="removed TS url metadata field" />
     <MESSAGE value="revive the idea of hiding ts URl field" />
     <MESSAGE value="hid ts url field" />
     <MESSAGE value="undo hid" />
@@ -483,6 +480,7 @@
     <MESSAGE value="measuremnt Technique with IRI" />
     <MESSAGE value="removed preset" />
     <MESSAGE value="undo the last commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="undo the last commit" />
+    <MESSAGE value="bug fix: removing measurement_technique_iri in addt. table" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix: removing measurement_technique_iri in addt. table" />
   </component>
 </project>

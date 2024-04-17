@@ -3,5 +3,5 @@
 {% set hypertext = data['variableMeasured_tsurl'] %}
 {% set hovertext = data['variableMeasured_propertyID'] %}
 
-{{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) ~ ':' ~ data['variableMeasured_value'] }}
+{{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) ~ ' : ' ~ data['variableMeasured_value'] }}
 
