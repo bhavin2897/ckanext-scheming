@@ -5,7 +5,7 @@
 
 <!--only if purl_iri is available, it will generate information and ts-links-->
 
-{% if purl_iri_url %}
+{% if curie %}
     {% set label, description_sentence, ts_url, definded_to,short_form = h.scheming_link_ts(curie) %}
 {% endif %}
 

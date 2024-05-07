@@ -458,26 +458,32 @@ def scheming_link_ts(curie):
     
     This also generates links to NFDI4CHem Terminology Service for the given PURL IRI. 
     """
+    global label
+    try:
+        base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
 
-    base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
+        response = requests.get(base_url + curie)
+        data = response.json()
+        content = data['_embedded']['terms'][0]
+        label = content['label']
+        description = content['description']
+        defined_from = content['ontology_name']
+        definded_to = content['ontology_prefix']
+        short_form = content['short_form']
+        iri = content['iri']
 
-    response = requests.get(base_url + curie)
-    data = response.json()
-    content = data['_embedded']['terms'][0]
-    label = content['label']
-    description = content['description']
-    defined_from = content['ontology_name']
-    definded_to = content['ontology_prefix']
-    short_form = content['short_form']
-    iri = content['iri']
+        encoded_iri = urllib.parse.quote(string=str(iri), safe='')
 
-    encoded_iri = urllib.parse.quote(string=str(iri), safe='')
+        if isinstance(description, list):
+            description_sentence = description[0]
+        else:
+            description_sentence = description
 
-    if isinstance(description, list):
-        description_sentence = description[0]
-    else:
-        description_sentence = description
+        ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
 
-    ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
+        return label, description_sentence, ts_url, definded_to, short_form
 
-    return label, description_sentence, ts_url, definded_to, short_form
+    except KeyError:
+        
+        pass
+        return None, None, None, None, None
