@@ -1,7 +1,18 @@
 
 {% set display_label = data['measurement_technique']  %}
-{% set hypertext = data['measurement_technique_iri'] %}
+{% set purl_iri_url = data['measurement_technique_iri'] %}
 {% set hovertext = data['variableMeasured_propertyID'] %}
 
-{{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=display_label) }}
+<!--only if purl_iri is available, it will generate information and ts-links-->
+
+{% if purl_iri_url %}
+    {% set label, description_sentence, ts_url, definded_to = h.scheming_link_ts(purl_iri_url) %}
+{% endif %}
+
+
+<!-- Initial hover information -->
+{% set hoverInfo = "Label: " ~ label ~ "\n\nDescription: " ~ description_sentence ~ "\n\nCURIE : " ~
+        curie ~ "\n\ndefined_in : "  ~ definded_to %}
+
+{{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) }}
 

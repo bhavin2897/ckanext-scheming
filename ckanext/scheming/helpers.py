@@ -5,6 +5,8 @@ import datetime
 import pytz
 import json
 import six
+import requests
+import urllib.parse
 
 from jinja2 import Environment
 from ckantoolkit import config, _
@@ -445,3 +447,35 @@ def scheming_flatten_subfield(subfield, data):
         for k in record:
             flat[prefix + k] = record[k]
     return flat
+
+@helper
+def scheming_link_ts(purl_iri):
+    """
+    Typically for NFDI4Chem Function
+    
+    This function creates API calls to generate label,description from an PURL IRI if available.
+    And send to the frontend to generate hovering information about the CURIE/label. 
+    
+    This also generates links to NFDI4CHem Terminology Service for the given PURL IRI. 
+    """
+
+    base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?iri='
+    
+    encoded_iri = urllib.parse.quote(string= str(purl_iri), safe='')
+
+    response = requests.get(base_url + purl_iri)
+    data = response.json()
+    content = data['_embedded']['terms'][0]
+    label = content['label']
+    description = content['description']
+    defined_from = content['ontology_name']
+    definded_to = content['ontology_prefix']
+
+    if isinstance(description, list):
+        description_sentence = description[0]
+    else:
+        description_sentence = description
+
+    ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
+
+    return label, description_sentence, ts_url, definded_to

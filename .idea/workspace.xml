@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="hyperlink for iri updated" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="display units for each measurement">
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/assets/js/main.5a946ceb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/assets/js/scheming-hover-text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink_to_delete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,13 +101,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00079" summary="field name  reversing">
-      <created>1690471632125</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1690471632125</updated>
     </task>
     <task id="LOCAL-00080" summary="field name reversing">
       <created>1690471796576</created>
@@ -439,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1713363556745</updated>
     </task>
-    <option name="localTasksCounter" value="128" />
+    <task id="LOCAL-00128" summary="display units for each measurement">
+      <created>1713785380828</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1713785380829</updated>
+    </task>
+    <option name="localTasksCounter" value="129" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,7 +462,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="hid ts url field" />
     <MESSAGE value="undo hid" />
     <MESSAGE value="added empty html" />
     <MESSAGE value="hovertext on hyperlink" />
@@ -481,6 +486,7 @@
     <MESSAGE value="undo the last commit" />
     <MESSAGE value="bug fix: removing measurement_technique_iri in addt. table" />
     <MESSAGE value="hyperlink for iri updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="hyperlink for iri updated" />
+    <MESSAGE value="display units for each measurement" />
+    <option name="LAST_COMMIT_MESSAGE" value="display units for each measurement" />
   </component>
 </project>

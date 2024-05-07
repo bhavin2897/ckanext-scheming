@@ -1,34 +1,60 @@
-
-{% set display_label = data['variableMeasured_name']  %}
-{% set hypertext = data['variableMeasured_tsurl'] %}
-{% set hovertext = data['variableMeasured_propertyID'] %}
+{% set display_label = data['variableMeasured_name'] %}
+{% set purl_iri_url = data['variableMeasured_tsurl'] %}
+{% set curie = data['variableMeasured_propertyID'] %}
 {% set value_display = data['variableMeasured_value'] %}
 
+<!--only if purl_iri is available, it will generate information and ts-links-->
+
+{% if purl_iri_url %}
+    {% set label, description_sentence, ts_url, definded_to = h.scheming_link_ts(purl_iri_url) %}
+{% endif %}
+
+
+<!-- Initial hover information -->
+{% set hoverInfo = "Label: " ~ label ~ "\n\nDescription: " ~ description_sentence ~ "\n\nCURIE : " ~
+        curie ~ "\n\ndefined_in : "  ~ definded_to %}
+
+<!--all the labels and values for all Measurement Variables-->
+
 {% if display_label == 'Temperature' %}
-    {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) ~ ' : ' ~ data['variableMeasured_value'] ~ ' K ' }}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' K ' }}
+
 {% elif display_label == 'irradiation frequency' %}
     {% if value_display is iterable and value_display is not string %}
-        {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) }} :
+        {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) }} :
         {% for item in value_display %}
             {% if not loop.first %}, {% endif %}{{ item ~ ' MHz '}}
         {% endfor %}
     {% endif %}
-{% elif display_label == 'relaxation time measurement' %}
-    {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) ~ ' : ' ~ data['variableMeasured_value'] ~ ' seconds ' }}
-{% elif display_label == 'number of data points' %}
-    {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) ~ ' : ' ~ data['variableMeasured_value'] ~ ' points ' }}
-{% elif display_label == 'number of scans' %}
-    {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) ~ ' : ' ~ data['variableMeasured_value'] ~ ' scans ' }}
-{% elif display_label == 'magnetic field strength' %}
-    {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) ~ ' : ' ~ data['variableMeasured_value'] ~ ' Tesla ' }}
-{% else %}
-    {% if value_display is iterable and value_display is not string %}
-        {{ h.link_to(display_label, hypertext, rel=field.display_property, target='_blank', title=hovertext) }} :
-        {% for item in value_display %}
-            {% if not loop.first %}, {% endif %}{{ item }}
-        {% endfor %}
-    {% endif %}
 
+{% elif display_label == 'relaxation time measurement' %}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' seconds ' }}
+
+{% elif display_label == 'number of data points' %}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' points ' }}
+{% elif display_label == 'number of scans' %}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' scans ' }}
+
+{% elif display_label == 'magnetic field strength' %}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' Tesla ' }}
+
+{% elif value_display is iterable and value_display is not string %}
+
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' }}
+            {% for item in value_display %}
+                {% if not loop.first %}, {% endif %}{{ item }}
+            {% endfor %}
+
+{% else %}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display }}
 {% endif %}
+
+
+
+
+
+{# Temperature or metadata query #}
+{# Values as CURIEs and Link if the link is  provided #}
+
 
 
