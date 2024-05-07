@@ -449,7 +449,7 @@ def scheming_flatten_subfield(subfield, data):
     return flat
 
 @helper
-def scheming_link_ts(purl_iri):
+def scheming_link_ts(curie):
     """
     Typically for NFDI4Chem Function
     
@@ -459,11 +459,9 @@ def scheming_link_ts(purl_iri):
     This also generates links to NFDI4CHem Terminology Service for the given PURL IRI. 
     """
 
-    base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?iri='
-    
-    encoded_iri = urllib.parse.quote(string= str(purl_iri), safe='')
+    base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
 
-    response = requests.get(base_url + purl_iri)
+    response = requests.get(base_url + curie)
     data = response.json()
     content = data['_embedded']['terms'][0]
     label = content['label']
@@ -471,6 +469,9 @@ def scheming_link_ts(purl_iri):
     defined_from = content['ontology_name']
     definded_to = content['ontology_prefix']
     short_form = content['short_form']
+    iri = content['iri']
+
+    encoded_iri = urllib.parse.quote(string=str(iri), safe='')
 
     if isinstance(description, list):
         description_sentence = description[0]
@@ -479,4 +480,4 @@ def scheming_link_ts(purl_iri):
 
     ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
 
-    return label, description_sentence, ts_url, definded_to,short_form
+    return label, description_sentence, ts_url, definded_to, short_form
