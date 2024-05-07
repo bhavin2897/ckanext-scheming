@@ -470,6 +470,7 @@ def scheming_link_ts(purl_iri):
     description = content['description']
     defined_from = content['ontology_name']
     definded_to = content['ontology_prefix']
+    short_form = content['short_form']
 
     if isinstance(description, list):
         description_sentence = description[0]
@@ -478,4 +479,4 @@ def scheming_link_ts(purl_iri):
 
     ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
 
-    return label, description_sentence, ts_url, definded_to
+    return label, description_sentence, ts_url, definded_to,short_form
