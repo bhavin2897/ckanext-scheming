@@ -3,6 +3,46 @@
 {% set curie = data['variableMeasured_propertyID'] %}
 {% set value_display = data['variableMeasured_value'] %}
 
+
+<script type="text/javascript">
+   $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();  // Make sure this matches exactly
+        });
+
+</script>
+
+
+<style>
+    .tooltip-inner {
+    max-width: 500px; /* Corrected maximum width */
+    width: 300px; /* Corrected fixed width */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    border-radius: 6px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the tooltip */
+    font-size: 14px; /* Font size */
+    text-align: left; /* Align text to the left */
+}
+
+.tooltip {
+    word-wrap: break-word; /* Ensure long words break */
+}
+
+/* Additional CSS to correctly position the tooltip */
+.tooltip.show {
+    opacity: 1; /* Ensure tooltip is fully opaque when shown */
+}
+
+/* Positioning the tooltip - adjust if tooltip position is not correct */
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    bottom: 0;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-top .tooltip-inner {
+    margin-bottom: 5px; /* Give some space between arrow and tooltip content */
+}
+
+</style>
+
 <!--only if purl_iri is available, it will generate information and ts-links-->
 
 {% if curie %}
@@ -11,42 +51,42 @@
 
 
 <!-- Initial hover information -->
-{% set hoverInfo = "Label: " ~ display_label ~ "\n\nDescription: " ~ description_sentence ~ "\n\nCURIE : " ~
-        curie ~ "\n\ndefined_in : "  ~ definded_to %}
+{% set hoverInfo =  "<b>Label: </b> "  ~ display_label ~ "<br><br><b>Description: </b> " ~ description_sentence ~ "<br><br><b>CURIE:  </b>" ~
+        curie ~ "<br><br><b>defined_in : </b>"  ~ definded_to %}
 
 <!--all the labels and values for all Measurement Variables-->
 
 {% if display_label == 'Temperature' %}
-    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' K ' }}
+    {{ h.link_to(display_label, ts_url,rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display ~ ' K ' }}
 
 {% elif display_label == 'irradiation frequency' %}
     {% if value_display is iterable and value_display is not string %}
-        {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) }} :
+        {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) }} :
         {% for item in value_display %}
             {% if not loop.first %}, {% endif %}{{ item ~ ' MHz '}}
         {% endfor %}
     {% endif %}
 
 {% elif display_label == 'relaxation time measurement' %}
-    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' seconds ' }}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display ~ ' seconds ' }}
 
 {% elif display_label == 'number of data points' %}
-    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' points ' }}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display ~ ' points ' }}
 {% elif display_label == 'number of scans' %}
-    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' scans ' }}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display ~ ' scans ' }}
 
 {% elif display_label == 'magnetic field strength' %}
-    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display ~ ' Tesla ' }}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display ~ ' Tesla ' }}
 
 {% elif value_display is iterable and value_display is not string %}
 
-    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' }}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' }}
             {% for item in value_display %}
                 {% if not loop.first %}, {% endif %}{{ item }}
             {% endfor %}
 
 {% else %}
-    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) ~ ' : ' ~ value_display }}
+    {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display }}
 {% endif %}
 
 

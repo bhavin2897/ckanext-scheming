@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="display units for each measurement">
-      <change afterPath="$PROJECT_DIR$/ckanext/scheming/assets/js/main.5a946ceb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ckanext/scheming/assets/js/scheming-hover-text.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink_to_delete.html" afterDir="false" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="generate Hoverinfo and ts-url via CURIE">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,41 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00080" summary="field name reversing">
-      <created>1690471796576</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1690471796576</updated>
-    </task>
-    <task id="LOCAL-00081" summary="test field name">
-      <created>1690474523817</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1690474523817</updated>
-    </task>
-    <task id="LOCAL-00082" summary="test field name">
-      <created>1690474688465</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1690474688465</updated>
-    </task>
-    <task id="LOCAL-00083" summary="test field name">
-      <created>1690476934756</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1690476934756</updated>
-    </task>
-    <task id="LOCAL-00084" summary="revise">
-      <created>1690477016368</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1690477016368</updated>
     </task>
     <task id="LOCAL-00085" summary="revise">
       <created>1690477789398</created>
@@ -445,7 +406,42 @@
       <option name="project" value="LOCAL" />
       <updated>1713785380829</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="generate hovertext info and linking to TS">
+      <created>1715080320800</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1715080320800</updated>
+    </task>
+    <task id="LOCAL-00130" summary="generate hovertext info and linking to TS">
+      <created>1715083200305</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1715083200305</updated>
+    </task>
+    <task id="LOCAL-00131" summary="generate hovertext info and linking to TS">
+      <created>1715085700387</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1715085700387</updated>
+    </task>
+    <task id="LOCAL-00132" summary="generate Hoverinfo and ts-url via CURIE">
+      <created>1715090403180</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1715090403180</updated>
+    </task>
+    <task id="LOCAL-00133" summary="generate Hoverinfo and ts-url via CURIE">
+      <created>1715092424692</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1715092424692</updated>
+    </task>
+    <option name="localTasksCounter" value="134" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -462,8 +458,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="undo hid" />
-    <MESSAGE value="added empty html" />
     <MESSAGE value="hovertext on hyperlink" />
     <MESSAGE value="elimnate var_value with text" />
     <MESSAGE value="label at the dataset list view" />
@@ -487,6 +481,8 @@
     <MESSAGE value="bug fix: removing measurement_technique_iri in addt. table" />
     <MESSAGE value="hyperlink for iri updated" />
     <MESSAGE value="display units for each measurement" />
-    <option name="LAST_COMMIT_MESSAGE" value="display units for each measurement" />
+    <MESSAGE value="generate hovertext info and linking to TS" />
+    <MESSAGE value="generate Hoverinfo and ts-url via CURIE" />
+    <option name="LAST_COMMIT_MESSAGE" value="generate Hoverinfo and ts-url via CURIE" />
   </component>
 </project>

@@ -3,6 +3,44 @@
 {% set purl_iri_url = data['measurement_technique_iri'] %}
 {% set curie = data['variableMeasured_propertyID'] %}
 
+
+<script type="text/javascript">
+   $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();  // Make sure this matches exactly
+        });
+</script>
+
+<style>
+    .tooltip-inner {
+    max-width: 500px; /* Corrected maximum width */
+    width: 300px; /* Corrected fixed width */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    border-radius: 6px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the tooltip */
+    font-size: 14px; /* Font size */
+    text-align: left; /* Align text to the left */
+}
+
+.tooltip {
+    word-wrap: break-word; /* Ensure long words break */
+}
+
+/* Additional CSS to correctly position the tooltip */
+.tooltip.show {
+    opacity: 1; /* Ensure tooltip is fully opaque when shown */
+}
+
+/* Positioning the tooltip - adjust if tooltip position is not correct */
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    bottom: 0;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-top .tooltip-inner {
+    margin-bottom: 5px; /* Give some space between arrow and tooltip content */
+}
+
+</style>
+
 <!--only if purl_iri is available, it will generate information and ts-links-->
 
 {% if curie %}
@@ -11,8 +49,8 @@
 
 
 <!-- Initial hover information -->
-{% set hoverInfo = "Label: " ~ display_label ~ "\n\nDescription: " ~ description_sentence ~ "\n\nCURIE : " ~
-        short_form ~ "\n\ndefined_in : "  ~ definded_to %}
+{% set hoverInfo =  "<b>Label: </b> "  ~ display_label ~ "<br><br><b>Description: </b> " ~ description_sentence ~ "<br><br><b>CURIE:  </b>" ~
+        curie ~ "<br><br><b>defined_in : </b>"  ~ definded_to %}
 
-{{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', title=hoverInfo) }}
+{{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) }}
 
