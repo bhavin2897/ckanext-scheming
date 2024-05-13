@@ -41,6 +41,22 @@
     margin-bottom: 5px; /* Give some space between arrow and tooltip content */
 }
 
+.curie {
+background-color: #873593 !important;
+boarder-color: #873593 !important;
+color: white !important;
+padding : 3px !important;
+}
+
+.defined-in {
+background-color: #0e6668 !important;
+boarder-color: #0e6668 !important;
+color: white !important;
+padding : 3px !important;
+}
+
+
+
 </style>
 
 <!--only if purl_iri is available, it will generate information and ts-links-->
@@ -51,13 +67,13 @@
 
 
 <!-- Initial hover information -->
-{% set hoverInfo =  "<b>Label: </b> "  ~ display_label ~ "<br><br><b>Description: </b> " ~ description_sentence ~ "<br><br><b>CURIE:  </b>" ~
-        curie ~ "<br><br><b>defined_in : </b>"  ~ definded_to %}
+{% set hoverInfo =  "<b>Label: </b> "  ~ display_label ~ "<br><br><b>Description: </b> " ~ description_sentence ~ "<br><br><b>CURIE: </b>" ~
+"<span class='curie'>" ~ curie ~ "</span>" ~ "<br><br><b>defined_in :  </b>"  ~ "<span class='defined-in'>" ~ definded_to ~ "</span>" %}
 
 <!--all the labels and values for all Measurement Variables-->
 
 {% if display_label == 'Temperature' %}
-    {{ h.link_to(display_label, ts_url,rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display ~ ' K ' }}
+    {{ h.link_to(display_label, ts_url,rel=field.display_property, target='_blank',data_toggle="tooltip", data_html="true", title=hoverInfo) ~ ' : ' ~ value_display ~ ' K ' }}
 
 {% elif display_label == 'irradiation frequency' %}
     {% if value_display is iterable and value_display is not string %}
