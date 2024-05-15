@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="color coding for curies" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="Reduce line breaks within hover-info">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,13 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00087" summary="revise">
-      <created>1690477996421</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1690477996421</updated>
     </task>
     <task id="LOCAL-00088" summary="obtain this on both yaml files">
       <created>1690529265305</created>
@@ -439,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715611600436</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="Reduce line breaks within hover-info">
+      <created>1715668909438</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1715668909438</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -456,7 +458,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="label at the dataset list view" />
     <MESSAGE value="extends missing" />
     <MESSAGE value="outside scheming html" />
     <MESSAGE value="ckan extends" />
@@ -481,6 +482,7 @@
     <MESSAGE value="generate Hoverinfo and ts-url via CURIE" />
     <MESSAGE value="bold text on hoverInfo" />
     <MESSAGE value="color coding for curies" />
-    <option name="LAST_COMMIT_MESSAGE" value="color coding for curies" />
+    <MESSAGE value="Reduce line breaks within hover-info" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reduce line breaks within hover-info" />
   </component>
 </project>
