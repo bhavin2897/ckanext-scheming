@@ -63,7 +63,7 @@ padding : 3px !important;
 
 <!-- Initial hover information -->
 {% set hoverInfo =  "<b>Label: </b> "  ~ display_label ~ "<br><b>Description: </b> " ~ description_sentence ~ "<br><b>CURIE: </b>" ~
-"<span class='curie'>" ~ curie ~ "</span>" ~ "<br><b>defined_in :  </b>"  ~ "<span class='defined-in'>" ~ definded_to ~ "</span>" %}
+"<span class='curie'>" ~ short_form ~ "</span>" ~ "<br><b>defined_in :  </b>"  ~ "<span class='defined-in'>" ~ definded_to ~ "</span>" %}
 
 {{ h.link_to(display_label, ts_url, rel=field.display_property, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) }}
 
