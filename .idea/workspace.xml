@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="Measurement CURIE replaced by short_form">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="measurement technique displayed as colored label">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink_mT.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink_mT.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +99,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00090" summary="removed TS url metadata field">
-      <created>1690529996194</created>
-      <option name="number" value="00090" />
-      <option name="presentableId" value="LOCAL-00090" />
-      <option name="project" value="LOCAL" />
-      <updated>1690529996194</updated>
     </task>
     <task id="LOCAL-00091" summary="revive the idea of hiding ts URl field">
       <created>1690530079358</created>
@@ -442,7 +436,14 @@
       <option name="project" value="LOCAL" />
       <updated>1715763447076</updated>
     </task>
-    <option name="localTasksCounter" value="139" />
+    <task id="LOCAL-00139" summary="measurement technique displayed as colored label">
+      <created>1716288482149</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1716288482150</updated>
+    </task>
+    <option name="localTasksCounter" value="140" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -459,7 +460,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ckan extends" />
     <MESSAGE value="addition and deletion of preset of related_entity" />
     <MESSAGE value="missing preset" />
     <MESSAGE value="added missing preset" />
@@ -484,6 +484,7 @@
     <MESSAGE value="Reduce line breaks within hover-info" />
     <MESSAGE value="measurement Technique takes CURIE" />
     <MESSAGE value="Measurement CURIE replaced by short_form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Measurement CURIE replaced by short_form" />
+    <MESSAGE value="measurement technique displayed as colored label" />
+    <option name="LAST_COMMIT_MESSAGE" value="measurement technique displayed as colored label" />
   </component>
 </project>
