@@ -3,6 +3,11 @@ scheming_css:
   contents:
     - styles/scheming.css
 
+tooltip_hover_css:
+  output: ckanext-scheming/%(version)s_tooltip_hover_css.css
+  contents:
+    - styles/tooltip-hover.css
+
 subfields:
   filters: rjsmin
   output: ckanext-scheming/%(version)s_scheming_subfields.js
@@ -20,3 +25,4 @@ multiple_text:
       - base/main
   contents:
     - js/scheming-multiple-text.js
+

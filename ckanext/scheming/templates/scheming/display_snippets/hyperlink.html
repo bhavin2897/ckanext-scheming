@@ -3,62 +3,13 @@
 {% set curie = data['variableMeasured_propertyID'] %}
 {% set value_display = data['variableMeasured_value'] %}
 
+{% asset 'ckanext-scheming/tooltip_hover_css' %}
 
 <script type="text/javascript">
-   $(document).ready(function() {
-            $('[data-toggle="tooltip"]').tooltip();  // Make sure this matches exactly
-        });
-
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
 </script>
-
-<style type="css">
-/* General style for the tooltip */
-.tooltip-inner {
-    max-width: 500px;
-    width: 300px;
-    white-space: pre-wrap;
-    border-radius: 6px;
-    padding: 5px 10px;
-    font-size: 14px;
-    text-align: left;
-    line-height: 1.7; /* Increased line height for better readability */
-}
-
-.tooltip {
-    word-wrap: break-word;
-}
-
-/* Ensure tooltip is fully opaque when shown */
-.tooltip.show {
-    opacity: 1;
-}
-
-/* Corrects the position of the tooltip arrow for top placement */
-.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before,
-.tooltip.bs-tooltip-top .arrow::before {
-    bottom: 0;
-}
-
-/* Adds space between arrow and tooltip content */
-.tooltip.bs-tooltip-auto[x-placement^=top] .tooltip-inner,
-.tooltip.bs-tooltip-top .tooltip-inner {
-    margin-bottom: 5px;
-}
-
-/* Custom class styles with corrected property names */
-.curie, .defined-in {
-    background-color: #873593 !important; /* Example color for .curie */
-    border-color: #873593 !important; /* Corrected property name from 'boarder' to 'border' */
-    color: white !important;
-    padding: 3px !important;
-}
-
-.defined-in {
-    background-color: #0e6668 !important;
-    border-color: #0e6668 !important;
-}
-
-</style>
 
 <!--only if purl_iri is available, it will generate information and ts-links-->
 

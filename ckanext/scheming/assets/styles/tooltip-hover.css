@@ -1,0 +1,44 @@
+/* Tooltip */
+
+.tooltip-inner {
+    max-width: 500px; /* Corrected maximum width */
+    width: 300px; /* Corrected fixed width */
+    white-space: pre-wrap; /* Preserve whitespace and line breaks */
+    border-radius: 6px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the tooltip */
+    font-size: 14px; /* Font size */
+    text-align: left; /* Align text to the left */
+    line-height: 1.7;
+}
+
+.tooltip {
+    word-wrap: break-word; /* Ensure long words break */
+}
+
+/* Additional CSS to correctly position the tooltip */
+.tooltip.show {
+    opacity: 1; /* Ensure tooltip is fully opaque when shown */
+}
+
+/* Positioning the tooltip - adjust if tooltip position is not correct */
+.tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before {
+    bottom: 0;
+}
+
+.tooltip.bs-tooltip-auto[x-placement^=top] .tooltip-inner, .tooltip.bs-tooltip-top .tooltip-inner {
+    margin-bottom: 5px; /* Give some space between arrow and tooltip content */
+}
+
+.curie {
+background-color: #873593 !important;
+boarder-color: #873593 !important;
+color: white !important;
+padding : 3px !important;
+}
+
+.defined-in {
+background-color: #0e6668 !important;
+border-color: #0e6668 !important;
+color: white !important;
+padding : 3px !important;
+}
