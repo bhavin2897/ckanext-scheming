@@ -29,7 +29,7 @@
   {% endif %}
 
   {% if pkg_dict.get('inchi_key') %}
-    {% snippet "snippets/rdkit_visuals.html", pkg = pkg_dict %}
+    {% snippet "snippets/ckanext_rdkit_visuals_rdkit_visuals.html", pkg = pkg_dict %}
   {% else %}
     <section class="chemical-info">
   <h3>{{ _('Chemical Info') }}</h3>
@@ -72,7 +72,7 @@
 
 
 {% block package_additional_info %}
-  {% snippet "snippets/related_identifier.html", pkg = pkg %}
+  {% snippet "snippets/ckanext_rdkit_visuals_related_identifier.html", pkg = pkg %}
   {% snippet "scheming/package/snippets/additional_info.html",
     pkg_dict=pkg, dataset_type=dataset_type, schema=schema %}
 {% endblock %}

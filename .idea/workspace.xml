@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="hover-text tooltip css line-height">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="hover-text css resource">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,13 +97,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1643365726179</updated>
-    </task>
-    <task id="LOCAL-00092" summary="hid ts url field">
-      <created>1690530425522</created>
-      <option name="number" value="00092" />
-      <option name="presentableId" value="LOCAL-00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1690530425522</updated>
     </task>
     <task id="LOCAL-00093" summary="hid ts url field">
       <created>1690532259427</created>
@@ -441,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717158097601</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="hover-text css resource">
+      <created>1717591542902</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1717591542902</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -458,7 +458,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="missing preset" />
     <MESSAGE value="added missing preset" />
     <MESSAGE value="addition of display_snippet as null in additional_table" />
     <MESSAGE value="repeating subfields UI changes" />
@@ -483,6 +482,7 @@
     <MESSAGE value="Measurement CURIE replaced by short_form" />
     <MESSAGE value="measurement technique displayed as colored label" />
     <MESSAGE value="hover-text tooltip css line-height" />
-    <option name="LAST_COMMIT_MESSAGE" value="hover-text tooltip css line-height" />
+    <MESSAGE value="hover-text css resource" />
+    <option name="LAST_COMMIT_MESSAGE" value="hover-text css resource" />
   </component>
 </project>
