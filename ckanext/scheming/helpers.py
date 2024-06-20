@@ -7,6 +7,7 @@ import json
 import six
 import requests
 import urllib.parse
+import logging 
 
 from jinja2 import Environment
 from ckantoolkit import config, _
@@ -14,6 +15,8 @@ from ckantoolkit import config, _
 from ckanapi import LocalCKAN, NotFound, NotAuthorized
 
 all_helpers = {}
+
+log=logging.getLogger(__name__)
 
 def helper(fn):
     """
