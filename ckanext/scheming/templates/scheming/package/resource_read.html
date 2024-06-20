@@ -10,7 +10,7 @@
 
 {% block resource_view_content %}
     {% if pkg_dict.get('inchi_key') %}
-        {% snippet "snippets/data_page_visuals.html", pkg = pkg_dict%}
+        {% snippet "snippets/ckanext_rdkit_visuals_data_page_visuals.html", pkg = pkg_dict%}
         {{ super() }}
     {% endif %}
 {% endblock %}
