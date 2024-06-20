@@ -489,6 +489,6 @@ def scheming_link_ts(curie):
             return label, description_sentence, ts_url, definded_to, short_form
         
     except Exception as e:
-        log.Error(e)
+        log.error(e)
         pass
         return None, None, None, None, None
