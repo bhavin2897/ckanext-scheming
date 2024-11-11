@@ -461,34 +461,44 @@ def scheming_link_ts(curie):
     
     This also generates links to NFDI4CHem Terminology Service for the given PURL IRI. 
     """
+
     global label
     try:
         base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
-
         response = requests.get(base_url + curie)
-        response.raise_for_status()
-        if response.status_code !=204:
-            data = response.json()
-            content = data['_embedded']['terms'][0]
-            label = content['label']
-            description = content['description']
-            defined_from = content['ontology_name']
-            definded_to = content['ontology_prefix']
-            short_form = content['short_form']
-            iri = content['iri']
 
-            encoded_iri = urllib.parse.quote(string=str(iri), safe='')
+        # Check for successful response
+        if response.status_code == 204:
+            # If response code is 204, return None values as per the condition
+            return None, None, None, None, None
+        elif response.status_code != 200:
+            # If response code is not 200 or 204, log error and return None values
+            log.error(f"Unexpected status code: {response.status_code}")
+            return None, None, None, None, None
 
-            if isinstance(description, list):
-                description_sentence = description[0]
-            else:
-                description_sentence = description
+        # Proceed if response is 200
+        data = response.json()
+        content = data['_embedded']['terms'][0]
+        label = content['label']
+        description = content['description']
+        defined_from = content['ontology_name']
+        defined_to = content['ontology_prefix']
+        short_form = content['short_form']
+        iri = content['iri']
 
-            ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
+        # Encode the IRI
+        encoded_iri = urllib.parse.quote(string=str(iri), safe='')
 
-            return label, description_sentence, ts_url, definded_to, short_form
-        
+        # Handle description being a list or single string
+        if isinstance(description, list):
+            description_sentence = description[0]
+        else:
+            description_sentence = description
+
+        ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
+
+        return label, description_sentence, ts_url, defined_to, short_form
+
     except Exception as e:
         log.error(e)
-        pass
         return None, None, None, None, None
