@@ -465,7 +465,7 @@ def scheming_link_ts(curie):
     global label
     try:
         base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
-        response = requests.get(base_url + curie)
+        response = requests.get(base_url + curie, timeout=5)  # Adding a timeout to handle long waits
 
         # Check for successful response
         if response.status_code == 204:
@@ -490,15 +490,13 @@ def scheming_link_ts(curie):
         encoded_iri = urllib.parse.quote(string=str(iri), safe='')
 
         # Handle description being a list or single string
-        if isinstance(description, list):
-            description_sentence = description[0]
-        else:
-            description_sentence = description
+        description_sentence = description[0] if isinstance(description, list) else description
 
         ts_url = 'https://terminology.nfdi4chem.de/ts/ontologies/' + defined_from + '/terms/?iri=' + encoded_iri
 
         return label, description_sentence, ts_url, defined_to, short_form
 
     except Exception as e:
-        log.error(e)
+        log.error(f"An error occurred: {e}")
         return None, None, None, None, None
+
