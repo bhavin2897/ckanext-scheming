@@ -465,14 +465,16 @@ def scheming_link_ts(curie):
     global label
     try:
         base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
-        response = requests.get(base_url + curie, timeout=5)  # Adding a timeout to handle long waits
+
+        # Make a single request with a 5-second timeout
+        response = requests.get(base_url + curie, timeout=5)
 
         # Check for successful response
         if response.status_code == 204:
-            # If response code is 204, return None values as per the condition
+            # Return None values if response code is 204
             return None, None, None, None, None
         elif response.status_code != 200:
-            # If response code is not 200 or 204, log error and return None values
+            # Log error and return None values for any other unexpected status code
             log.error(f"Unexpected status code: {response.status_code}")
             return None, None, None, None, None
 
@@ -496,7 +498,11 @@ def scheming_link_ts(curie):
 
         return label, description_sentence, ts_url, defined_to, short_form
 
+    except requests.exceptions.Timeout:
+        # Handle timeout by logging and returning None values
+        log.error("Request timed out.")
+        return None, None, None, None, None
     except Exception as e:
+        # Handle any other exceptions
         log.error(f"An error occurred: {e}")
         return None, None, None, None, None
-
