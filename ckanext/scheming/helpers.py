@@ -520,7 +520,7 @@ def scheming_get_source_unichem(inchi_key):
         list: A list of dictionaries containing transformed data with specific fields.
     """
 
-    log.debug(f"Scaling source: {inchi_key}")
+    #log.debug(f"Scaling source: {inchi_key}")
     baseurl = "https://www.ebi.ac.uk/unichem/"
     responsiveurl = f"{baseurl}rest/verbose_inchikey/{inchi_key}"
 
@@ -544,7 +544,7 @@ def scheming_get_source_unichem(inchi_key):
             for entry in data
         ]
 
-        log.debug(transformed_data)
+        #log.debug(transformed_data)
         return transformed_data
 
     except requests.exceptions.RequestException as e:
