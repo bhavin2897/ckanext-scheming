@@ -18,7 +18,7 @@
 {% set tb2_exclude = 'variableMeasured_tsurl' %}
 
 {%- set variable_measured = ['measurement_technique', 'variableMeasured'] -%}
-
+{%- set transformed_data = h.scheming_get_source_unichem(pkg_dict.inchi_key) -%}
 
 <style>
     .btn:focus{
@@ -37,16 +37,20 @@
     <button class="btn btn-default shadow-none"  id="showMetadata"> Additional </button>
         </li>
 
-        {% if pkg_dict.type != 'project' %}
+
         <li class="nav-item">
     <button class="btn btn-default shadow-none"  id="showMeasureVal"> Measurement </button>
         </li>
-        {% endif %}
+
+        <li class="nav-item">
+            <button class="btn btn-default shadow-none" id="showMolSource" > Molecule Data-Sources </button>
+        </li>
+
     </ul>
 
 </div>
 
-
+<!-- Additional Info Table -->
 
 <table id="tableMetadata" class="table table-striped table-bordered table-condensed">
     <thead>
@@ -77,11 +81,12 @@
     </tr>
   {% endif %}
     </tbody>
+
 </table>
 
-    {% if pkg_dict.type != 'project' %}
+<!--Measurement Information table -->
 
-    <table class="table table-striped table-bordered table-condensed" id="tableMeasurVal">
+<table class="table table-striped table-bordered table-condensed" id="tableMeasureVal">
      <thead>
       <tr>
         <th scope="col">{{ _('Field') }}</th>
@@ -105,27 +110,61 @@
         {%- endif -%}
      {%- endfor -%}
 
-     {% endif %}
      </tbody>
- </table>
+</table>
 
+
+
+{% if transformed_data %}
+<!--Molecule Data-Source Information table -->
+<table class="table table-striped table-bordered table-condensed" id="tableMolSource">
+     <thead>
+      <tr>
+        <th scope="col">{{ _('Data-Source Molecule ID ') }}</th>
+        <th scope="col">{{ _('Data-Source ') }}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+    {% for item in transformed_data %}
+
+    <tr>
+      <th scope="row" class="dataset-label">{{ item.src_compound_id }} </th>
+      <td class="dataset-details" >
+        <a href="{{ item.src_url }}" target="_blank">{{ item.name_label }}</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
 
 <script>
 
 var tableMetadata = document.getElementById("tableMetadata");
-var tableMeasurVal = document.getElementById("tableMeasurVal");
+var tableMeasureVal = document.getElementById("tableMeasureVal");
+var tableMolSource = document.getElementById("tableMolSource");
 
 var btnTabA = document.getElementById("showMetadata");
 var btnTabB = document.getElementById("showMeasureVal");
+var btnTabC = document.getElementById("showMolSource");
 
 
 btnTabA.onclick = function () {
     tableMetadata.style.display = "table";
-    tableMeasurVal.style.display = "none";
+    tableMeasureVal.style.display = "none";
+    tableMolSource.style.display = "none";
 }
 btnTabB.onclick = function () {
     tableMetadata.style.display = "none";
-    tableMeasurVal.style.display = "table";
+    tableMeasureVal.style.display = "table";
+    tableMolSource.style.display = "none";
+}
+
+btnTabC.onclick = function () {
+    tableMetadata.style.display = "none";
+    tableMeasureVal.style.display = "none";
+    tableMolSource.style.display = "table";
 }
 
 document.getElementById("showMetadata").click();

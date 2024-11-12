@@ -506,3 +506,55 @@ def scheming_link_ts(curie):
         # Handle any other exceptions
         log.error(f"An error occurred: {e}")
         return None, None, None, None, None
+
+
+@helper
+def scheming_get_source_unichem(inchi_key):
+    """
+    Fetch and transform data from UniChem API based on InChIKey.
+
+    Parameters:
+        inchi_key (str): The InChIKey to use for the API request.
+
+    Returns:
+        list: A list of dictionaries containing transformed data with specific fields.
+    """
+
+    log.debug(f"Scaling source: {inchi_key}")
+    baseurl = "https://www.ebi.ac.uk/unichem/"
+    responsiveurl = f"{baseurl}rest/verbose_inchikey/{inchi_key}"
+
+    try:
+        log.debug(f"URL: {responsiveurl}")
+
+        # Make the API request
+        response = requests.get(responsiveurl, timeout=5)
+        response.raise_for_status()  # Raises an error for HTTP 4xx/5xx responses
+        data = response.json()
+
+        # Fields to extract
+        fields = ['src_compound_id', 'name_label', 'src_url', 'description']
+
+        # Transform data to only include specified fields
+        transformed_data = [
+            {
+                field: entry.get(field, "") if not isinstance(entry.get(field), list) else entry.get(field, [""])[0]
+                for field in fields
+            }
+            for entry in data
+        ]
+
+        log.debug(transformed_data)
+        return transformed_data
+
+    except requests.exceptions.RequestException as e:
+        log.error(f"Request failed: {e}")
+    except ValueError as e:
+        log.error(f"Invalid JSON response: {e}")
+    except Exception as e:
+        log.error(f"An error occurred: {e}")
+
+    return []  # Return an empty list in case of any error
+
+
+
