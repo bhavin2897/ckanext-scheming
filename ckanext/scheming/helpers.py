@@ -467,7 +467,7 @@ def scheming_link_ts(curie):
         base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
 
         # Make a single request with a 5-second timeout
-        response = requests.get(base_url + curie)
+        response = requests.get(base_url + curie, timeout=2)
 
         # Check for successful response
         if response.status_code == 204:

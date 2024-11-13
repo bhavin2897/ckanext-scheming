@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="hover-text css resource">
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="molecule-data-source tab additional_info.html">
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/molecule4chem.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/sample4chem.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/public/unichem_logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets/molecule_data_source.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/plugins.py" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/plugins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/rdkit_visuals.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/rdkit_visuals.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +37,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bhavin2897&quot;
+  }
+}</component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
       <filtered-out-file-type name="LOCAL_BRANCH" />
@@ -39,26 +58,43 @@
       </list>
     </option>
   </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/bhavin2897/ckanext-scheming.git&quot;,
+    &quot;accountId&quot;: &quot;849dcb34-4f2c-4d7e-bd9c-4840c703f903&quot;
+  }
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink_mT.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/base.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/assets/styles/scheming.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/assets/resource.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/assets/webassets.yml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/related_identifier.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/assets/styles/tooltip-hover.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/data_page_visuals.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/hyperlink.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/project4chem.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/helpers.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/ckan_dataset.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/form_snippets/multiple_text.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/plugins.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/presets.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets/display_field.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/related_identifier.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets/errors.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/fancy_type.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/study4chem.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/package_form.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/snippets/package_item.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets/repeating_subfields.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/additional_info.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets/data_page_visuals.html" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="24K411XkBzcZeeF63p4GJB9QVaE" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -67,20 +103,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/public"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ckanext/scheming/public" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/display_snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/form_snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/snippets" />
-      <recent name="$PROJECT_DIR$/ckanext/scheming" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ckanext/scheming/templates/scheming/snippets" />
@@ -88,6 +124,13 @@
       <recent name="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/" />
       <recent name="$PROJECT_DIR$/ckanext/scheming/BioSchema4Chem/" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -441,7 +484,7 @@
       <option name="project" value="LOCAL" />
       <updated>1717591542902</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -454,13 +497,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added missing preset" />
-    <MESSAGE value="addition of display_snippet as null in additional_table" />
-    <MESSAGE value="repeating subfields UI changes" />
     <MESSAGE value="test server fancy_type entity" />
     <MESSAGE value="reversed" />
     <MESSAGE value="schemas and html changed as per relationship plugin" />
@@ -483,6 +522,9 @@
     <MESSAGE value="measurement technique displayed as colored label" />
     <MESSAGE value="hover-text tooltip css line-height" />
     <MESSAGE value="hover-text css resource" />
-    <option name="LAST_COMMIT_MESSAGE" value="hover-text css resource" />
+    <MESSAGE value="addin jquery error" />
+    <MESSAGE value="change ts tib response code" />
+    <MESSAGE value="molecule-data-source tab additional_info.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="molecule-data-source tab additional_info.html" />
   </component>
 </project>
