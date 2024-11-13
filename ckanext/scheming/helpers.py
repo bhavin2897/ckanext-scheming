@@ -467,7 +467,7 @@ def scheming_link_ts(curie):
         base_url = 'https://service.tib.eu/ts4tib/api/terms/findByIdAndIsDefiningOntology?id='
 
         # Make a single request with a 5-second timeout
-        response = requests.get(base_url + curie, timeout=5)
+        response = requests.get(base_url + curie)
 
         # Check for successful response
         if response.status_code == 204:
@@ -528,7 +528,7 @@ def scheming_get_source_unichem(inchi_key):
         log.debug(f"URL: {responsiveurl}")
 
         # Make the API request
-        response = requests.get(responsiveurl, timeout=5)
+        response = requests.get(responsiveurl)
         response.raise_for_status()  # Raises an error for HTTP 4xx/5xx responses
         data = response.json()
 
