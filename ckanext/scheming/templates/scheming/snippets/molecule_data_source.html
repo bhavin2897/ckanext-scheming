@@ -1,0 +1,22 @@
+
+
+{% asset 'ckanext-scheming/tooltip_hover_css' %}
+
+<script type="text/javascript">
+   $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip();  // Make sure this matches exactly
+            console.log('works')
+        });
+</script>
+
+
+
+<!-- Initial hover information for the Data Source of the Molecule, and description about that Databank or Data Source
+from where Molecule is linked to.-->
+
+<!--Hyperlink to the Source URL of the Molecule Data Source and a tooltip feature. Via API from UniChem -->
+
+{% set hoverInfo =  "<b>Label: </b> "  ~ label ~ "<br><b>Description: </b> " ~ description  %}
+
+{{ h.link_to(label, src_url, target='_blank', data_toggle="tooltip", data_html="true", title=hoverInfo) }}
+
