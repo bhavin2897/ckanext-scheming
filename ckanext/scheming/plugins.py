@@ -17,6 +17,7 @@ except ImportError:
 import ckan.model as model
 from ckan.common import c, json
 from ckan.lib.navl.dictization_functions import unflatten, flatten_schema
+
 try:
     from ckan.lib.helpers import helper_functions as core_helper_functions
 except ImportError:  # CKAN <= 2.5
@@ -48,6 +49,7 @@ DEFAULT_PRESETS = 'ckanext.scheming:presets.json'
 
 log = logging.getLogger(__name__)
 
+
 def run_once_for_caller(var_name, rval_fn):
     """
     return passed value if this method has been called more than once
@@ -68,7 +70,9 @@ def run_once_for_caller(var_name, rval_fn):
             # inject local varible into caller to track separate calls (reloading)
             caller.f_locals[var_name] = None
             return fn(*args, **kwargs)
+
         return wrapper
+
     return decorator
 
 
@@ -274,7 +278,7 @@ class SchemingDatasetsPlugin(p.SingletonPlugin, DefaultDatasetForm,
             for f in composite_convert_fields:
                 if f not in unflat:
                     continue
-                data[(f,)] = json.dumps(unflat[f], default=lambda x:None if x == missing else x)
+                data[(f,)] = json.dumps(unflat[f], default=lambda x: None if x == missing else x)
                 convert_to_extras((f,), data, errors, context)
                 del data[(f,)]
 
@@ -405,7 +409,6 @@ def expand_form_composite(data, fieldnames):
                 del data[key]
         except (IndexError, ValueError):
             pass  # best-effort only
-
 
 
 class SchemingGroupsPlugin(p.SingletonPlugin, _GroupOrganizationMixin,
