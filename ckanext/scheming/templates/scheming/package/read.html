@@ -1,8 +1,8 @@
 {% extends "package/read.html" %}
 
 {% block package_description %}
-   {% if pkg.type == 'project' %}
-      <span class="label label-warning" style="font-size:15px;"> Project </span>
+   {% if pkg.type == 'molecule' %}
+      <span class="label label-warning" style="font-size:15px;"> Molecule </span>
    {% elif pkg.type == 'study' %}
       <span class="label label-info" style="font-size:15px;"> Study </span>
    {% else %}
@@ -54,7 +54,7 @@
     {% if pkg_dict.related_project or  pkg_dict.related_study or pkg_dict.related_dataset %}
     {% for field in schema.dataset_fields  %}
 
-        {% if field.field_name == 'related_study' %}
+        {% if field.field_name == 'related_molecule' %}
             {% snippet 'scheming/schema_package_resource.html', field=field, data=pkg_dict%}
 
         {% elif field.field_name == 'related_dataset' %}
