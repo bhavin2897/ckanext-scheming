@@ -2,8 +2,8 @@
 
 {% block heading_title %}
  {{ super() }}
-     {% if package.type == 'project' %}
-      <span class="label label-warning" style="font-size:12cd /usr/px;"> Project </span>
+     {% if package.type == 'molecule' %}
+      <span class="label label-warning" style="font-size:12cd /usr/px;"> Molecule </span>
    {% elif package.type == 'study' %}
       <span class="label label-info" style="font-size:12px;"> Study </span>
    {% else %}
