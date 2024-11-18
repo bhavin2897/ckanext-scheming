@@ -159,15 +159,15 @@ dataset_fields:
   form_placeholder: 1970-01-01
   form_snippet: datetime_tz.html
 
-#relationship to study
-- field_name: related_study
-  label: Related Study
+#relationship to molecule
+- field_name: related_molecule
+  label: Related Molecule
   preset: related_entity
   current_entity: package
   current_entity_type: dataset
   related_entity: package
-  related_entity_type: study
-  relation_type: child_of
+  related_entity_type: molecule
+  relation_type: related_to
   multiple: true
   updatable_only: false
   required: false
