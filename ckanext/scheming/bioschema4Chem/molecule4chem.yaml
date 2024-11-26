@@ -14,7 +14,6 @@ dataset_fields:
   preset: dataset_slug
   form_placeholder: eg. my-dataset
 
-
 - field_name: notes
   label: Description
   form_snippet: markdown.html
@@ -55,6 +54,17 @@ dataset_fields:
   label: Molecular Formula
   display_snippet: text.html
 
+- field_name: alternate_name
+  label: Alternate Name
+  display_snippet: text.html
+  preset: multiple_text
+
+#- field_name: measurement_technique
+#  label: Measurement Technique
+#  display_snippet: hyperlink_mT.html
+#
+#- field_name: measurement_technique_iri
+#  label: Measurement Technique IRI
 
 
 #relationship to datasets
