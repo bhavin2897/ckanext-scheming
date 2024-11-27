@@ -13,6 +13,20 @@
 {% endblock %}
 
 
+
+{% block notes %}
+    {% if package.type == 'molecule' %}
+    {% set return_img = h.footer(package_inchiKey = package.inchi_key, page = package) %}
+<div>
+            {{  h.snippet('snippets/ckanext_footer_package_search_result_image.html', return_value = return_img, imageName = package.inchi_key,
+            package = package.id, molecule_formula = package.mol_formula, exact_mass = package.exact_mass, inchi=package.inchi, iupac_name=package.iupacName, molecule_name= package.iupacName ) }}
+</div>
+    {% else %}
+    {{ super() }}
+{% endif %}
+
+{% endblock %}
+
 {% block resources %}
         {% if package.resources and not hide_resources %}
           {% block resources_outer %}
@@ -23,6 +37,8 @@
                   <a href="{{ h.url_for(package.type ~ '.read', id=package.name) }}" class="label label-default" data-format="{{ resource.lower() }}">{{ resource }}</a>
                 </li>
                 {% endfor %}
+
+                {# To display measurement Technique below the dataset #}
 
                 {% if package.measurement_technique %}
                     {% if not package.measurement_technique.startswith('{') %}
