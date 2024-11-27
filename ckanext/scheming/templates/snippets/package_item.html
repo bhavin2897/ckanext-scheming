@@ -19,7 +19,7 @@
     {% set return_img = h.footer(package_inchiKey = package.inchi_key, page = package) %}
 <div>
             {{  h.snippet('snippets/ckanext_footer_package_search_result_image.html', return_value = return_img, imageName = package.inchi_key,
-            package = package.id, molecule_formula = package.mol_formula, exact_mass = package.exact_mass, inchi=package.inchi, iupac_name=package.iupacName, molecule_name= package.iupacName ) }}
+            package = package.id, molecule_formula = package.mol_formula, exact_mass = package.exact_mass, inchi=package.inchi, iupac_name=None, molecule_name= None ) }}
 </div>
     {% else %}
     {{ super() }}
