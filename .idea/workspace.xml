@@ -4,19 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="molecule-data-source tab additional_info.html">
-      <change afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/molecule4chem.yaml" afterDir="false" />
+    <list default="true" id="c495dcf4-ac1b-4735-a93c-6b0a273cccfb" name="Changes" comment="additional_info added molecule id">
       <change afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/sample4chem.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/dataset4chem.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/camel_photos.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/ckan_dataset.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/ckan_formpages.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/custom_group_with_status.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/custom_org_with_address.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/group_with_bookface.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/plugins.py" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/plugins.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/templates/scheming/package/read.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/molecule4chem.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/bioschema4Chem/molecule4chem.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckanext/scheming/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/ckanext/scheming/helpers.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,13 +96,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/public&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/usr/lib/ckan/default/src/ckanext-scheming/ckanext/scheming/public"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ckanext/scheming/public" />
@@ -129,7 +122,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-d7ad00fb9fc3-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.23726.102" />
+        <option value="bundled-python-sdk-1b1018131e27-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.180" />
       </set>
     </attachedChunks>
   </component>
@@ -485,7 +478,7 @@
       <option name="project" value="LOCAL" />
       <updated>1717591542902</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <option name="localTasksCounter" value="155" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -501,13 +494,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test server fancy_type entity" />
-    <MESSAGE value="reversed" />
-    <MESSAGE value="schemas and html changed as per relationship plugin" />
-    <MESSAGE value="elminated related field and changed on package view" />
-    <MESSAGE value="testing on server with fancy_type" />
-    <MESSAGE value="collapse bar for related types with description" />
-    <MESSAGE value="measuremnt Technique with IRI" />
     <MESSAGE value="removed preset" />
     <MESSAGE value="undo the last commit" />
     <MESSAGE value="bug fix: removing measurement_technique_iri in addt. table" />
@@ -526,6 +512,13 @@
     <MESSAGE value="addin jquery error" />
     <MESSAGE value="change ts tib response code" />
     <MESSAGE value="molecule-data-source tab additional_info.html" />
-    <option name="LAST_COMMIT_MESSAGE" value="molecule-data-source tab additional_info.html" />
+    <MESSAGE value="cleaning" />
+    <MESSAGE value="related molecule on package read" />
+    <MESSAGE value="redo ckan_dataset &amp; custom_org_with_address" />
+    <MESSAGE value="new molecule schema &amp; updated dataset schema" />
+    <MESSAGE value="front-end show relation molecule &amp; dataset" />
+    <MESSAGE value="alternate-names as multiple text field" />
+    <MESSAGE value="additional_info added molecule id" />
+    <option name="LAST_COMMIT_MESSAGE" value="additional_info added molecule id" />
   </component>
 </project>

@@ -56,13 +56,27 @@ dataset_fields:
 
 - field_name: alternate_name
   label: Alternate Name
-  display_snippet: text.html
+  # display_snippet: text.html
   preset: multiple_text
 
 #- field_name: measurement_technique
 #  label: Measurement Technique
-#  display_snippet: hyperlink_mT.html
-#
+#  display_snippet: text.html
+#  multiple: true
+#  required: false
+#  facetable: true
+#  filterable: true
+
+# {
+  #    "field_name": "measurement_technique",
+  #    "label": "Measurement Technique",
+  #    "required": false,
+  #    "type": "list",
+  #    "facetable": true,
+  #    "filterable": true
+  #}
+
+
 #- field_name: measurement_technique_iri
 #  label: Measurement Technique IRI
 

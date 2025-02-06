@@ -525,7 +525,7 @@ def scheming_get_source_unichem(inchi_key):
     responsiveurl = f"{baseurl}rest/verbose_inchikey/{inchi_key}"
 
     try:
-        log.debug(f"URL: {responsiveurl}")
+        # log.debug(f"URL: {responsiveurl}")
 
         # Make the API request
         response = requests.get(responsiveurl)

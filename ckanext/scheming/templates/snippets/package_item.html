@@ -1,5 +1,8 @@
 {% ckan_extends %}
 
+{%- set field = {'form_snippet': 'related_entity.html', 'display_snippet': 'related_entity.html', 'validators': 'relationship_related_entity', 'field_name': 'related_dataset', 'label': 'Related Dataset', 'preset': 'related_entity', 'current_entity': 'package', 'current_entity_type': 'molecule', 'related_entity': 'package', 'related_entity_type': 'dataset', 'relation_type': 'related_to', 'multiple': True, 'updatable_only': False, 'required': False} -%}
+{% set dataset_list = h.relationship_get_current_relations_list(field=package, data=field) %}
+
 {% block heading_title %}
  {{ super() }}
      {% if package.type == 'molecule' %}
@@ -13,13 +16,30 @@
 {% endblock %}
 
 
-
 {% block notes %}
     {% if package.type == 'molecule' %}
     {% set return_img = h.footer(package_inchiKey = package.inchi_key, page = package) %}
+
 <div>
             {{  h.snippet('snippets/ckanext_footer_package_search_result_image.html', return_value = return_img, imageName = package.inchi_key,
-            package = package.id, molecule_formula = package.mol_formula, exact_mass = package.exact_mass, inchi=package.inchi, iupac_name=None, molecule_name= None ) }}
+            package = package.id, molecule_formula = package.mol_formula, exact_mass = package.exact_mass, inchi=package.inchi, iupac_name=None,
+        molecule_name= None ) }}
+
+    <h5> Related Dataset(s)</h5>
+    <ul>
+
+    {% for d_list in dataset_list %}
+        {% set dataset_dict = h.relationship_get_dataset_dict_from_dataset_id(d_list) %}
+
+        <li>
+            {{ h.link_to(
+                dataset_dict['title'],
+                h.url_for('%s.read' % 'dataset', id=d_list)
+            ) }}
+        </li>
+    {% endfor %}
+    </ul>
+
 </div>
     {% else %}
     {{ super() }}
