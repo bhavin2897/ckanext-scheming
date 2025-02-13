@@ -4,7 +4,24 @@
 {% set dataset_list = h.relationship_get_current_relations_list(field=package, data=field) %}
 
 {% block heading_title %}
- {{ super() }}
+{% if package.type == 'molecule' %}
+    {# Define the maximum length for the title #}
+    {%- set max_length = 50 -%}
+
+    {# Check if the title is too long #}
+    {% if title | length > max_length %}
+        {# Use alternate_name if available and the title is too long #}
+        {%- set alternate_names = package.alternate_name if 'alternate_name' in package else [] -%}
+        {%- set display_title = alternate_names[0] if alternate_names else title -%}
+    {% else %}
+        {# Use the default title if it's not too long #}
+        {%- set display_title = title -%}
+    {% endif %}
+    {{ h.link_to(h.truncate(display_title, truncate_title), h.url_for('%s.read' % package.type, id=package.name)) }}
+{% else %}
+{{ super() }}
+{% endif %}
+
      {% if package.type == 'molecule' %}
       <span class="label label-warning" style="font-size:12cd /usr/px;"> Molecule </span>
    {% elif package.type == 'study' %}
