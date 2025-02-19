@@ -524,12 +524,21 @@ def scheming_get_source_unichem(inchi_key):
     baseurl = "https://www.ebi.ac.uk/unichem/"
     responsiveurl = f"{baseurl}rest/verbose_inchikey/{inchi_key}"
 
+
     try:
         # log.debug(f"URL: {responsiveurl}")
 
         # Make the API request
-        response = requests.get(responsiveurl)
-        response.raise_for_status()  # Raises an error for HTTP 4xx/5xx responses
+        response = requests.get(responsiveurl,timeout=3)
+
+        if response.status_code == 204:
+            # Return None values if response code is 204
+            return None, None, None, None, None
+        elif response.status_code != 200:
+            # Log error and return None values for any other unexpected status code
+            log.error(f"Unexpected status code: {response.status_code}")
+            return None, None, None, None, None  # Raises an error for HTTP 4xx/5xx responses
+
         data = response.json()
 
         # Fields to extract
