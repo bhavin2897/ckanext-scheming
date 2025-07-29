@@ -504,7 +504,7 @@ def scheming_link_ts(curie):
         return None, None, None, None, None
     except Exception as e:
         # Handle any other exceptions
-        log.error(f"An error occurred: {e}")
+        log.error(f"An error occurred-TS: {e}")
         return None, None, None, None, None
 
 
@@ -561,7 +561,7 @@ def scheming_get_source_unichem(inchi_key):
     except ValueError as e:
         log.error(f"Invalid JSON response: {e}")
     except Exception as e:
-        log.error(f"An error occurred: {e}")
+        log.error(f"An error occurred - UniChem: {e}")
 
     return []  # Return an empty list in case of any error
 

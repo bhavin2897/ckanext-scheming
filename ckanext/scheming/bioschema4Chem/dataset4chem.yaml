@@ -143,16 +143,16 @@ dataset_fields:
       label: TS URL
       display_snippet: null
 
-
-- field_name: metadata_created
-  label: MetadataCreated
-  form_placeholder: 1970-01-01
-  form_snippet: datetime_tz.html
-
-- field_name: metadata_modified
-  label: MetadataModified
-  form_placeholder: 1970-01-01
-  form_snippet: datetime_tz.html
+#
+#- field_name: metadata_created
+#  label: MetadataCreated
+#  form_placeholder: 1970-01-01
+#  form_snippet: datetime_tz.html
+#
+#- field_name: metadata_modified
+#  label: MetadataModified
+#  form_placeholder: 1970-01-01
+#  form_snippet: datetime_tz.html
 
 - field_name: metadata_published
   label: MetadataPublished
@@ -180,14 +180,10 @@ resource_fields:
   preset: resource_url_upload
 
 - field_name: name
-  label: Name
+  label: Resource Name
   form_placeholder: eg. January 2011 Gold Prices
-
-- field_name: description
-  label: Description
-  form_snippet: markdown.html
-  form_placeholder: Some useful notes about the data
 
 - field_name: format
   label: Format
   preset: resource_format_autocomplete
+
