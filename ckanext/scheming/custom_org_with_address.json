@@ -28,6 +28,12 @@
       "field_name": "url",
       "label": "Image URL",
       "form_placeholder": "http://example.com/my-image.jpg"
+    },
+    {
+      "field_name": "external_url",
+      "label": "External URL",
+      "form_snippet": "text.html",
+      "form_placeholder": "www.example.com"
     }
   ]
 }
