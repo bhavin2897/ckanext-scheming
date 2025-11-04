@@ -1,7 +1,7 @@
 {% ckan_extends %}
 
 {%- set field = {'form_snippet': 'related_entity.html', 'display_snippet': 'related_entity.html', 'validators': 'relationship_related_entity', 'field_name': 'related_dataset', 'label': 'Related Dataset', 'preset': 'related_entity', 'current_entity': 'package', 'current_entity_type': 'molecule', 'related_entity': 'package', 'related_entity_type': 'dataset', 'relation_type': 'related_to', 'multiple': True, 'updatable_only': False, 'required': False} -%}
-{% set dataset_list = h.relationship_get_current_relations_list(field=package, data=field) %}
+{% set dataset_list = h.get_current_relations_list(field=package, data=field) %}
 
 {% block heading_title %}
 {% if package.type == 'molecule' %}
